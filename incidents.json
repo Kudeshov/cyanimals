@@ -1,0 +1,251 @@
+[
+  {
+    "id": "limassol-2026-04-09-001",
+    "city": "Limassol",
+    "title": {
+      "ru": "Кот с ранением из духового ружья",
+      "en": "Cat found with injuries from an air rifle",
+      "el": "Γάτα με τραύμα από αεροβόλο όπλο"
+    },
+    "date": "2026-04-09",
+    "lat": 34.71630850199375,
+    "lng": 33.019967182752296,
+    "type": "shooting",
+    "status": "dead",
+    "description": {
+      "ru": "Женщина, ухаживающая за уличными кошками, обнаружила одну из них тяжело раненой. У животного наблюдалось сильное кровотечение, оно не могло двигаться. На следующий день кошку доставили в ветеринарную клинику, где после обследования было установлено, что она была подстрелена. Несмотря на оказанную помощь и планируемую операцию, кошка умерла. Также сообщается о предыдущих аналогичных случаях в этом районе и угрозах отравления кошек.",
+      "en": "A caregiver found one of the neighborhood cats severely injured and unable to move. Veterinary examination confirmed that the cat had been shot. Despite medical treatment and plans for surgery, the cat died shortly after. Similar incidents and threats against cats in the area have been reported.",
+      "el": "Μια φροντίστρια βρήκε μια γάτα σοβαρά τραυματισμένη και ανίκανη να κινηθεί. Η κτηνιατρική εξέταση επιβεβαίωσε ότι η γάτα είχε πυροβοληθεί. Παρά την ιατρική φροντίδα και τα σχέδια για χειρουργείο, η γάτα πέθανε. Έχουν αναφερθεί παρόμοια περιστατικά και απειλές κατά των γατών στην περιοχή."
+    },
+    "images": [
+      "incidents/limassol-2026-04-09-001/1.jpg",
+      "incidents/limassol-2026-04-09-001/2.jpg",
+      "incidents/limassol-2026-04-09-001/3.jpg"
+    ]
+  },
+  {
+    "id": "limassol-2026-04-10-002",
+    "city": "Limassol",
+    "title": {
+      "ru": "Более 100 дробинок в теле кошки",
+      "en": "Over 100 pellets found in the cat's body",
+      "el": "Πάνω από 100 σκάγια στο σώμα της γάτας"
+    },
+    "date": "2026-04-10",
+    "lat": 34.652646227111184,
+    "lng": 33.002118157726414,
+    "type": "shooting",
+    "status": "dead",
+    "description": {
+      "ru": "Во время подготовки кошки к стерилизации ветеринар обнаружил, что она беременна, и она родила котят в клинике. После родов состояние животного ухудшилось. Рентген показал более 100 пуль в теле, что свидетельствует о стрельбе из пневматического оружия. Несмотря на лечение, кошка умерла.",
+      "en": "A female cat brought for sterilization was found to be pregnant and gave birth at the clinic. Her condition deteriorated after delivery. X-ray imaging revealed more than 100 pellets in her body, indicating repeated airgun attacks. The cat died despite treatment.",
+      "el": "Μια θηλυκή γάτα που μεταφέρθηκε για στείρωση αποδείχθηκε έγκυος και γέννησε στην κλινική. Μετά τον τοκετό η κατάστασή της επιδεινώθηκε. Η ακτινογραφία έδειξε πάνω από 100 σφαιρίδια στο σώμα της, υποδεικνύοντας επαναλαμβανόμενους πυροβολισμούς. Παρά τη θεραπεία, η γάτα πέθανε."
+    },
+    "images": [
+      "incidents/limassol-2026-04-10-002/1.jpg",
+      "incidents/limassol-2026-04-10-002/2.jpg",
+      "incidents/limassol-2026-04-10-002/3.jpg"
+    ]
+  },
+  {
+    "id": "limassol-2026-03-27-003",
+    "city": "Limassol",
+    "title": {
+      "ru": "Кошка с множественными травмами",
+      "en": "Cat found with multiple injuries",
+      "el": "Γάτα με πολλαπλούς τραυματισμούς"
+    },
+    "date": "2026-03-27",
+    "lat": 34.71235527731243,
+    "lng": 33.038265086570924,
+    "type": "shooting",
+    "status": "dead",
+    "description": {
+      "ru": "На улице была найдена кошка с тяжелыми травмами, не способная двигаться. Ветеринарное обследование показало наличие повреждений, включая следы попадания пули. Несмотря на попытки стабилизации и лечения, кошка умерла.",
+      "en": "An injured cat unable to move was found on the street. Veterinary examination revealed multiple injuries including those consistent with a pellet wound. Despite efforts to stabilize and treat the animal, it died.",
+      "el": "Μια τραυματισμένη γάτα που δεν μπορούσε να κινηθεί βρέθηκε στο δρόμο. Η κτηνιατρική εξέταση έδειξε πολλαπλούς τραυματισμούς, συμπεριλαμβανομένων τραυμάτων από σφαιρίδιο. Παρά τις προσπάθειες θεραπείας, η γάτα πέθανε."
+    },
+    "images": [
+      "incidents/limassol-2026-03-27-003/1.jpg"
+    ]
+  },
+  {
+    "id": "limassol-2026-04-14-004",
+    "city": "Limassol",
+    "title": {
+      "ru": "Кошка с тяжелым ранением, требуется ампутация",
+      "en": "Severely injured cat requiring amputation",
+      "el": "Σοβαρά τραυματισμένη γάτα με ανάγκη ακρωτηριασμού"
+    },
+    "date": "2026-04-14",
+    "lat": 34.698156998118606,
+    "lng": 33.083178700001476,
+    "type": "shooting",
+    "status": "injured",
+    "description": {
+      "ru": "Во время кормления кошек была обнаружена сильно травмированная кошка, которая передвигалась, волоча передние лапы. Ветеринар подтвердил огнестрельное ранение. Животному требуется сложное лечение, возможно с ампутацией задних конечностей.",
+      "en": "A severely injured cat was found dragging itself by its front legs. Veterinary examination confirmed a gunshot wound. The animal requires extensive treatment and may need amputation of the hind legs.",
+      "el": "Μια σοβαρά τραυματισμένη γάτα βρέθηκε να σέρνεται με τα μπροστινά της πόδια. Η κτηνιατρική εξέταση επιβεβαίωσε τραύμα από πυροβολισμό. Το ζώο χρειάζεται εκτεταμένη θεραπεία και πιθανώς ακρωτηριασμό των πίσω άκρων."
+    },
+    "images": []
+  },
+  {
+    "id": "larnaca-2026-04-18-005",
+    "city": "Larnaca",
+    "district": "Larnaca",
+    "title": {
+      "ru": "Кошка с дробинками в теле, критическое состояние",
+      "en": "Cat with pellets in body, critical condition",
+      "el": "Γάτα με σφαιρίδια στο σώμα, κρίσιμη κατάσταση"
+    },
+    "date": "2026-04-18",
+    "lat": 34.99428850841204,
+    "lng": 33.683549856720724,
+    "type": "shooting",
+    "status": "injured",
+    "description": {
+      "ru": "Человек обнаружил кошку, лежащую на дороге, и доставил животное в ветеринарную клинику. Рентгеновское обследование показало несколько дробинок в теле кошки. Животное находится в критическом состоянии.",
+      "en": "A person discovered a cat lying on the road and transported the animal to a veterinary clinic. X-ray imaging revealed several pellets in the cat's body. The cat is in critical condition.",
+      "el": "Ένα άτομο ανακάλυψε μια γάτα να κείται στο δρόμο και τη μετέφερε σε κτηνιατρική κλινική. Η ακτινογραφία αποκάλυψε αρκετά σφαιρίδια στο σώμα της γάτας. Η γάτα είναι σε κρίσιμη κατάσταση."
+    },
+    "images": [
+      "incidents/larnaca-2026-04-18-005/1.jpg",
+      "incidents/larnaca-2026-04-18-005/2.jpg",
+      "incidents/larnaca-2026-04-18-005/3.jpg",
+      "incidents/larnaca-2026-04-18-005/4.jpg"
+    ]
+  },
+  {
+    "id": "pafos-2026-03-08-006",
+    "city": "Pafos",
+    "district": "Kissonerga",
+    "title": {
+      "ru": "Две кошки с огнестрельными ранениями",
+      "en": "Two cats shot near Atlantica Golden Beach hotel",
+      "el": "Δύο γάτες που πυροβολήθηκαν κοντά στο ξενοδοχείο Atlantica Golden Beach"
+    },
+    "date": "2026-03-08",
+    "lat": 34.828637,
+    "lng": 32.390102,
+    "type": "shooting",
+    "status": "injured",
+    "description": {
+      "ru": "Волонтеры обнаружили двух кошек, застреленных рядом с отелем Atlantica Golden Beach. В рамках волонтерских усилий по кормлению и стерилизации кошек в этом районе оба животных были доставлены на медицинское лечение. Первая кошка была доставлена в клинику PaphosVets с повреждением глаза. Рентгеновское обследование выявило пулю, застрявшую в голове, и была проведена операция по удалению глаза. Вторая кошка была доставлена в клинику PetWellness, где пуля была успешно удалена из лапы.",
+      "en": "Volunteers found 2 cats who were shot near the Atlantica Golden Beach hotel. As part of volunteer efforts to feed and sterilize the cats living in the area, both animals were taken for medical treatment. The first cat was taken to PaphosVets clinic due to a damaged eye. An X-ray revealed a bullet lodged in the head, and surgery was performed to remove the eye. The second cat was taken to PetWellness Clinic, where a bullet was successfully removed from the paw.",
+      "el": "Εθελοντές βρήκαν 2 γάτες που πυροβολήθηκαν κοντά στο ξενοδοχείο Atlantica Golden Beach. Ως μέρος των εθελοντικών προσπαθειών για την τροφοδοσία και στείρωση των γατών που ζουν στην περιοχή, και τα δύο ζώα μεταφέρθηκαν για ιατρική θεραπεία. Η πρώτη γάτα μεταφέρθηκε στην κλινική PaphosVets λόγω ζημιάς στο μάτι. Η ακτινογραφία αποκάλυψε μια σφαίρα που ήταν εγκλωβισμένη στο κεφάλι και πραγματοποιήθηκε χειρουργική επέμβαση για την αφαίρεση του ματιού. Η δεύτερη γάτα μεταφέρθηκε στην κλινική PetWellness, όπου μια σφαίρα αφαιρέθηκε με επιτυχία από το πόδι."
+    },
+    "images": [
+      "incidents/pafos-2026-03-08-006/1.jpg",
+      "incidents/pafos-2026-03-08-006/2.jpg",
+      "incidents/pafos-2026-03-08-006/3.jpg",
+      "incidents/pafos-2026-03-08-006/4.jpg",
+      "incidents/pafos-2026-03-08-006/5.jpg",
+      "incidents/pafos-2026-03-08-006/6.jpg",
+      "incidents/pafos-2026-03-08-006/7.jpg"
+    ]
+  },
+  {
+    "id": "pafos-2026-02-16-007",
+    "city": "Pafos",
+    "district": "Geroskipou",
+    "title": {
+      "ru": "Кошка с огнестрельным ранением, эвтаназия",
+      "en": "Cat with gunshot wound, euthanized",
+      "el": "Γάτα με τραύμα από πυροβολισμό, αφανασία"
+    },
+    "date": "2026-02-16",
+    "lat": 34.76396954898154,
+    "lng": 32.44432745581985,
+    "type": "shooting",
+    "status": "dead",
+    "description": {
+      "ru": "Волонтер обнаружил кошку рядом с зданиями на улице Костаки Пентальиоти 2-4 в Геросипу вечером 16 февраля. Кошку доставили в клинику PaphosVets, где её осмотрели. Рентгеновское обследование выявило пулю в теле кошки. Судя по состоянию лап (кошка была парализована в нижней половине тела), животное ползало в таком состоянии около недели. Из-за отказа всех внутренних органов кошку пришлось усыпить 17 февраля. Тело кошки было отправлено на патологоанатомическое исследование.",
+      "en": "A volunteer found a cat near the buildings at Kostaki Pentalioti, 2-4 in Geroskipou at 19:00 on February 16. She took the cat to the PaphosVets clinic, where it was examined. X-ray imaging revealed a bullet in the cat's body. Judging by the condition of its paws (the cat was paralyzed in the lower half of its body), the animal had been crawling in this state for about a week. Due to organ failure, the cat was euthanized on February 17. The body was taken for autopsy analysis.",
+      "el": "Ένας εθελοντής βρήκε μια γάτα κοντά στα κτίρια στην οδό Κοστάκη Πεντάλιωτι 2-4 στο Γεροσκήπου στις 19:00 στις 16 Φεβρουαρίου. Τη μεταφέρει στην κλινική PaphosVets, όπου εξετάστηκε. Η ακτινογραφία αποκάλυψε μια σφαίρα στο σώμα της γάτας. Κρίνοντας από την κατάσταση των ποδιών του (η γάτα ήταν παράλυτη στο κάτω ήμισυ του σώματος), το ζώο ερπύστηκε σε αυτή την κατάσταση για περίπου μια εβδομάδα. Λόγω της αποτυχίας των οργάνων, η γάτα ευθανασίας στις 17 Φεβρουαρίου. Το σώμα χρησιμοποιήθηκε για ανάλυση νεκροψίας."
+    },
+    "images": [
+      "incidents/pafos-2026-02-16-007/1.jpg",
+      "incidents/pafos-2026-02-16-007/2.jpg",
+      "incidents/pafos-2026-02-16-007/3.jpg",
+      "incidents/pafos-2026-02-16-007/4.jpg",
+      "incidents/pafos-2026-02-16-007/5.jpg"
+    ]
+  },
+  {
+    "id": "payia-2026-03-06-008",
+    "city": "Pafos",
+    "district": "Payia",
+    "title": {
+      "ru": "Кот с попаданиями дробинок, старыми и новыми",
+      "en": "Cat shot with both old and new pellet wounds",
+      "el": "Γάτα που πυροβολήθηκε με παλιά και νέα τραύματα σφαιριδίων"
+    },
+    "date": "2026-03-06",
+    "lat": 34.87720173779199,
+    "lng": 32.38769233792223,
+    "type": "shooting",
+    "status": "injured",
+    "description": {
+      "ru": "Волонтер кормит этого кота и еще нескольких в своем дворе в верхней части Пейи. Кот пропал на 3-4 дня и вернулся в пятницу, 6 марта, будучи подстреленным. Его лицо было покрыто кровью, и он хромал. Кот провел одну ночь у ветеринара на лечение, затем волонтер ухаживал за ним дома еще шесть дней. Кот жив, но по-прежнему ходит с некоторыми затруднениями. Некоторые видимые на изображениях дробинки кажутся старыми, а другие - свежими.",
+      "en": "A volunteer feeds this cat and a few others in her backyard in upper Payia. The cat disappeared for 3-4 days and returned on Friday, March 6, having been shot. His face was covered in blood and he was limping. The cat spent one night at the vet for treatment, after which the volunteer cared for it at home for another six days. The cat is alive, but still walks with some difficulty. Some of the pellets visible in the images appear to be old, while others are recent.",
+      "el": "Ένας εθελοντής ταΐζει αυτή τη γάτα και μερικές άλλες στην αυλή του σε ανώτερη Πάφο. Η γάτα εξαφανίστηκε για 3-4 ημέρες και επέστρεψε την Παρασκευή, 6 Μαρτίου, αφού είχε πυροβοληθεί. Το πρόσωπό του ήταν καλυμμένο με αίμα και κουτσαίνει. Η γάτα έχει ένα βράδυ στον κτηνίατρο για θεραπεία, μετά από το οποίο ο εθελοντής τη φρόντιζε στο σπίτι για άλλες έξι ημέρες. Η γάτα είναι ζωντανή, αλλά εξακολουθεί να περπατά με κάποια δυσκολία. Ορισμένα από τα σφαιρίδια που είναι ορατά στις εικόνες φαίνονται παλιά, ενώ άλλα είναι πρόσφατα."
+    },
+    "images": [
+      "incidents/payia-2026-03-06-008/1.jpg",
+      "incidents/payia-2026-03-06-008/2.jpg",
+      "incidents/payia-2026-03-06-008/3.jpg",
+      "incidents/payia-2026-03-06-008/4.jpg"
+    ]
+  },
+  {
+    "id": "pafos-2024-07-15-010",
+    "city": "Pafos",
+    "title": {
+      "ru": "Кошка с дробинками, найдена на дороге",
+      "en": "Cat with pellets found on the road",
+      "el": "Γάτα με σφαιρίδια βρέθηκε στο δρόμο"
+    },
+    "date": "2024-07-15",
+    "lat": 34.775907571554704,
+    "lng": 32.42351016736631,
+    "type": "shooting",
+    "status": "injured",
+    "description": {
+      "ru": "Человек обнаружил кошку на дороге в середине деревни. Кошку доставили в животноводческую клинику Paphiakos в Пафосе. Рентгеновское обследование выявило несколько дробинок в теле кошки.",
+      "en": "A person found the cat on the road in the middle of the village. The cat was brought to animal clinic Paphiakos in Paphos. X-ray imaging revealed several pellets in the cat's body.",
+      "el": "Ένα άτομο βρήκε τη γάτα στο δρόμο στη μέση του χωριού. Η γάτα μεταφέρθηκε στην κτηνιατρική κλινική Paphiakos στην Πάφο. Η ακτινογραφία αποκάλυψε αρκετά σφαιρίδια στο σώμα της γάτας."
+    },
+    "images": [
+      "incidents/pafos-2024-07-15-010/1.jpg",
+      "incidents/pafos-2024-07-15-010/2.jpg",
+      "incidents/pafos-2024-07-15-010/3.jpg",
+      "incidents/pafos-2024-07-15-010/4.jpg",
+      "incidents/pafos-2024-07-15-010/5.jpg",
+      "incidents/pafos-2024-07-15-010/6.jpg",
+      "incidents/pafos-2024-07-15-010/7.jpg"
+    ]
+  },
+  {
+    "id": "achelia-2026-03-27-011",
+    "city": "Pafos",
+    "district": "Achelia",
+    "title": {
+      "ru": "Кошка с дробинкой в носу",
+      "en": "Cat with pellet embedded in nose",
+      "el": "Γάτα με σφαιρίδιο εμφυτευμένο στη μύτη"
+    },
+    "date": "2026-03-27",
+    "lat": 34.730961354475276,
+    "lng": 32.48038920505349,
+    "type": "shooting",
+    "status": "injured",
+    "description": {
+      "ru": "Кошка найдена серьёзно раненой с дробинкой, застрявшей в носу в деревне Ахелия в Пафосе.",
+      "en": "A cat has been found seriously injured with a gun pellet embedded in its nose in the Paphos village of Achelia.",
+      "el": "Μια γάτα βρέθηκε σοβαρά τραυματισμένη με ένα σφαιρίδιο ενσωματωμένο στη μύτη της στο χωριό Αχελεία της Πάφου."
+    },
+    "images": [
+      "incidents/achelia-2026-03-27-011/1.jpg"
+    ]
+  }
+]

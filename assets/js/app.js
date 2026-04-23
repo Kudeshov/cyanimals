@@ -1,0 +1,300 @@
+const translations = {
+  ru: {
+    site_title: 'Коты Кипра — карта и карточки инцидентов',
+    brand_name: 'Коты Кипра', nav_about: 'О проекте', nav_map: 'Карта', nav_incidents: 'Инциденты', nav_cities: 'Города', nav_report: 'Сообщить',
+    hero_eyebrow: 'Публичное внимание и документирование', hero_title: 'Документирование насилия против кошек на Кипре',
+    hero_text: 'Сайт собирает подтвержденные и поступившие сообщения об инцидентах, показывает их на карте и помогает передавать новую информацию.',
+    hero_btn_incidents: 'Смотреть инциденты', hero_btn_report: 'Передать информацию', 
+    hero_panel_contact: 'Проект принадлежит:',
+    contact_name: 'Ольга Коробинцева',
+    contact_phone_label: 'Телефон:',
+    contact_email_label: 'E-mail:',
+    about_title: 'О проекте', about_p1: 'Проект посвящен документированию случаев стрельбы, отравлений и другого насилия против кошек на Кипре.',
+    map_title: 'Карта инцидентов', map_text: 'Маркеры показывают примерные места инцидентов, которые сейчас добавлены на сайт.',
+    legend_shooting: 'Стрельба', legend_poisoning: 'Отравление', legend_other: 'Другое',
+    incidents_title: 'Карточки инцидентов', incidents_text: 'В каждой карточке могут быть описание, статус, город, дата, фотографии и отдельная карта.',
+    filter_city: 'Город', filter_type: 'Тип', filter_all: 'Все',
+    cities_title: 'Города Кипра', report_title: 'Передать информацию', report_text: 'Используйте форму, чтобы сообщить о новом инциденте, уточнить уже известный случай или связаться с командой проекта.', report_note_title: 'Примечание о конфиденциальности:', report_note_text: 'Не указывайте личные адреса, телефоны и имена частных лиц, если у вас нет четкого законного основания и согласия на публикацию.',
+    form_type: 'Тип сообщения', form_type_new: 'Новый инцидент', form_type_update: 'Информация по существующему инциденту', form_type_general: 'Другой вопрос', form_name: 'Ваше имя', form_email: 'Ваш e-mail', form_city: 'Город / район', form_incident_type: 'Тип инцидента', form_date: 'Дата инцидента', form_message: 'Описание', form_consent: 'Я понимаю, что отправленная информация может быть рассмотрена и использована для обратной связи.', form_send: 'Отправить',
+    footer_project: 'Коты Кипра', footer_hint: 'Проект посвящен документированию насилия против животных на Кипре и привлечению общественного внимания к этой проблеме.',
+    card_open: 'Открыть полную карточку', type_shooting: 'Стрельба', type_poisoning: 'Отравление', type_other: 'Другое', status_reported: 'Сообщение', status_pending: 'Ожидает результатов', status_confirmed: 'Подтверждено', status_dead: 'Погиб', status_injured: 'Ранен',
+    card_date: 'Дата', card_city: 'Город', card_map_note: 'Точка на карте указана примерно.',
+    no_photos: 'Фотографии пока не добавлены.', city_count_one: 'инцидент', city_count_few: 'инцидента', city_count_many: 'инцидентов',
+    form_sending: 'Отправка...', form_ok: 'Сообщение отправлено.', form_fail: 'Не удалось отправить форму. Проверьте ключ Web3Forms.'
+  },
+  en: {
+    site_title: 'Cats of Cyprus — incident map and cards', brand_name: 'Cats of Cyprus', nav_about: 'About', nav_map: 'Map', nav_incidents: 'Incidents', nav_cities: 'Cities', nav_report: 'Report',
+    hero_eyebrow: 'Public attention and documentation', hero_title: 'Documenting violence against cats in Cyprus', hero_text: 'This site collects verified and reported incidents, shows where they happened, and helps people submit new information.', hero_btn_incidents: 'View incidents', hero_btn_report: 'Send information', 
+    hero_panel_contact: 'Project owner:',
+    contact_name: 'Olga Korobintseva',
+    contact_phone_label: 'Phone:',
+    contact_email_label: 'E-mail:',
+    about_title: 'About the project', about_p1: 'The project is dedicated to documenting incidents involving shootings, poisoning and other violence against cats in Cyprus.',
+    map_title: 'Incident map', map_text: 'Markers show the approximate locations of incidents currently included on the site.', legend_shooting: 'Shooting', legend_poisoning: 'Poisoning', legend_other: 'Other', incidents_title: 'Incident cards', incidents_text: 'Each card can include description, status, city, date, photos and an individual map.', filter_city: 'City', filter_type: 'Type', filter_all: 'All', cities_title: 'Cities of Cyprus', report_title: 'Send information', report_text: 'Use the form to send information about a new incident, to clarify an existing case, or to contact the project team.', report_note_title: 'Privacy note:', report_note_text: 'Do not include personal addresses, phone numbers or names of private individuals unless you have a clear legal basis and consent to share them.',
+    form_type: 'Message type', form_type_new: 'New incident', form_type_update: 'Information about existing incident', form_type_general: 'Other question', form_name: 'Your name', form_email: 'Your e-mail', form_city: 'City / district', form_incident_type: 'Incident type', form_date: 'Date of incident', form_message: 'Description', form_consent: 'I understand that the submitted information may be reviewed and used for follow-up contact.', form_send: 'Send', footer_project: 'Cats of Cyprus', footer_hint: 'A project dedicated to documenting violence against animals in Cyprus and raising public awareness of this issue.', card_open: 'Open full card', type_shooting: 'Shooting', type_poisoning: 'Poisoning', type_other: 'Other', status_reported: 'Reported', status_pending: 'Pending results', status_confirmed: 'Confirmed', status_dead: 'Deceased', status_injured: 'Injured', card_date: 'Date', card_city: 'City', card_map_note: 'Map location is approximate.', no_photos: 'No photos added yet.', city_count_one: 'incident', city_count_few: 'incidents', city_count_many: 'incidents', form_sending: 'Sending...', form_ok: 'Message sent.', form_fail: 'Could not send the form. Check the Web3Forms key.'
+  },
+  el: {
+    site_title: 'Γάτες της Κύπρου — χάρτης και κάρτες περιστατικών', brand_name: 'Γάτες της Κύπρου', nav_about: 'Σχετικά', nav_map: 'Χάρτης', nav_incidents: 'Περιστατικά', nav_cities: 'Πόλεις', nav_report: 'Αναφορά',
+    hero_eyebrow: 'Δημόσια προσοχή και τεκμηρίωση', hero_title: 'Τεκμηρίωση βίας κατά γατών στην Κύπρο', hero_text: 'Ο ιστότοπος συγκεντρώνει επιβεβαιωμένα και αναφερόμενα περιστατικά, τα δείχνει στον χάρτη και βοηθά στην αποστολή νέων πληροφοριών.', hero_btn_incidents: 'Δείτε περιστατικά', hero_btn_report: 'Στείλτε πληροφορίες', 
+    hero_panel_contact: 'Αρχηγός έργου',
+    contact_name: 'Όλγα Κορομπίντσεβα',
+    contact_phone_label: 'Τηλέφωνο:',
+    contact_email_label: 'E-mail:',
+    about_title: 'Σχετικά με το έργο', about_p1: 'Το έργο είναι αφιερωμένο στην τεκμηρίωση περιστατικών πυροβολισμών, δηλητηριάσεων και άλλης βίας κατά γατών στην Κύπρο.',
+    map_title: 'Χάρτης περιστατικών', map_text: 'Οι δείκτες δείχνουν τις κατά προσέγγιση τοποθεσίες των περιστατικών που έχουν προστεθεί στον ιστότοπο.', legend_shooting: 'Πυροβολισμός', legend_poisoning: 'Δηλητηρίαση', legend_other: 'Άλλο', incidents_title: 'Κάρτες περιστατικών', incidents_text: 'Κάθε κάρτα μπορεί να περιλαμβάνει περιγραφή, κατάσταση, πόλη, ημερομηνία, φωτογραφίες και ξεχωριστό χάρτη.', filter_city: 'Πόλη', filter_type: 'Τύπος', filter_all: 'Όλα', cities_title: 'Πόλεις της Κύπρου', report_title: 'Στείλτε πληροφορίες', report_text: 'Χρησιμοποιήστε τη φόρμα για νέο περιστατικό, για διευκρίνιση υπάρχουσας υπόθεσης ή για επικοινωνία με την ομάδα του έργου.', report_note_title: 'Σημείωση ιδιωτικότητας:', report_note_text: 'Μην συμπεριλαμβάνετε προσωπικές διευθύνσεις, τηλέφωνα ή ονόματα ιδιωτών, εκτός αν έχετε σαφή νομική βάση και συγκατάθεση για κοινοποίηση.',
+    form_type: 'Τύπος μηνύματος', form_type_new: 'Νέο περιστατικό', form_type_update: 'Πληροφορίες για υπάρχον περιστατικό', form_type_general: 'Άλλη ερώτηση', form_name: 'Το όνομά σας', form_email: 'Το e-mail σας', form_city: 'Πόλη / περιοχή', form_incident_type: 'Τύπος περιστατικού', form_date: 'Ημερομηνία περιστατικού', form_message: 'Περιγραφή', form_consent: 'Κατανοώ ότι οι υποβληθείσες πληροφορίες μπορεί να εξεταστούν και να χρησιμοποιηθούν για επικοινωνία.', form_send: 'Αποστολή', footer_project: 'Γάτες της Κύπρου', footer_hint: 'Ένα έργο αφιερωμένο στην τεκμηρίωση βίας κατά ζώων στην Κύπρο και στη δημιουργία δημόσιας συνείδησης για αυτό το θέμα.', card_open: 'Άνοιγμα πλήρους κάρτας', type_shooting: 'Πυροβολισμός', type_poisoning: 'Δηλητηρίαση', type_other: 'Άλλο', status_reported: 'Αναφορά', status_pending: 'Αναμονή αποτελεσμάτων', status_confirmed: 'Επιβεβαιωμένο', status_dead: 'Νεκρό', status_injured: 'Τραυματισμένος', card_date: 'Ημερομηνία', card_city: 'Πόλη', card_map_note: 'Η τοποθεσία στον χάρτη είναι κατά προσέγγιση.', no_photos: 'Δεν έχουν προστεθεί ακόμη φωτογραφίες.', city_count_one: 'περιστατικό', city_count_few: 'περιστατικά', city_count_many: 'περιστατικά', form_sending: 'Αποστολή...', form_ok: 'Το μήνυμα στάλθηκε.', form_fail: 'Η φόρμα δεν στάλθηκε. Ελέγξτε το κλειδί Web3Forms.'
+  }
+};
+
+let currentLang = 'ru';
+let incidents = [];
+let mainMap;
+let mainMarkersLayer;
+const detailMaps = [];
+
+function detectLanguage() {
+  const saved = localStorage.getItem('catsSiteLang');
+  if (saved && translations[saved]) return saved;
+  const nav = (navigator.language || navigator.userLanguage || 'ru').toLowerCase();
+  if (nav.startsWith('en')) return 'en';
+  if (nav.startsWith('el')) return 'el';
+  return 'ru';
+}
+
+function t(key) {
+  return translations[currentLang]?.[key] ?? translations.ru[key] ?? key;
+}
+
+function setLanguage(lang) {
+  if (!translations[lang]) return;
+  currentLang = lang;
+  localStorage.setItem('catsSiteLang', lang);
+  document.documentElement.lang = lang;
+  document.title = t('site_title');
+  document.querySelectorAll('[data-i18n]').forEach((el) => {
+    const key = el.dataset.i18n;
+    el.textContent = t(key);
+  });
+  document.querySelectorAll('.lang-btn').forEach((btn) => btn.classList.toggle('active', btn.dataset.lang === lang));
+  renderIncidents();
+  renderCitySummary();
+  renderMainMap();
+}
+
+function pluralizeRu(count, one, few, many) {
+  const n = Math.abs(count) % 100;
+  const n1 = n % 10;
+  if (n > 10 && n < 20) return many;
+  if (n1 > 1 && n1 < 5) return few;
+  if (n1 === 1) return one;
+  return many;
+}
+
+function countLabel(count) {
+  if (currentLang === 'ru') return `${count} ${pluralizeRu(count, t('city_count_one'), t('city_count_few'), t('city_count_many'))}`;
+  return `${count} ${count === 1 ? t('city_count_one') : t('city_count_many')}`;
+}
+
+function getLocalizedField(obj, field) {
+  if (!obj) return '';
+  const value = obj[field];
+  if (!value) return '';
+  if (typeof value === 'string') return value;
+  return value[currentLang] || value.ru || value.en || value.el || '';
+}
+
+function typeLabel(type) { return t(`type_${type}`) || type; }
+function statusLabel(status) { return t(`status_${status}`) || status; }
+
+function badgeClass(prefix, value) {
+  return `badge-${value || prefix}`;
+}
+
+async function loadIncidents() {
+  const res = await fetch('incidents.json');
+  incidents = await res.json();
+  populateCityFilter();
+  renderIncidents();
+  renderCitySummary();
+  initMainMap();
+  attachForm();
+}
+
+function populateCityFilter() {
+  const select = document.getElementById('cityFilter');
+  const cities = [...new Set(incidents.map((item) => item.city))].sort();
+  select.innerHTML = `<option value="all">${t('filter_all')}</option>` + cities.map((city) => `<option value="${city}">${city}</option>`).join('');
+  document.getElementById('cityFilter').addEventListener('change', () => {
+    renderIncidents();
+    renderMainMap();
+  });
+  document.getElementById('typeFilter').addEventListener('change', () => {
+    renderIncidents();
+    renderMainMap();
+  });
+}
+
+function getFilteredIncidents() {
+  const cityValue = document.getElementById('cityFilter')?.value || 'all';
+  const typeValue = document.getElementById('typeFilter')?.value || 'all';
+  return incidents.filter((item) => (cityValue === 'all' || item.city === cityValue) && (typeValue === 'all' || item.type === typeValue));
+}
+
+function renderIncidents() {
+  const list = document.getElementById('incidentList');
+  if (!list) return;
+  list.innerHTML = '';
+  detailMaps.length = 0;
+  const filtered = getFilteredIncidents();
+  const tpl = document.getElementById('incidentCardTemplate');
+
+  filtered.forEach((item, index) => {
+    const node = tpl.content.cloneNode(true);
+    const card = node.querySelector('.incident-card');
+    const typeBadge = node.querySelector('.incident-type');
+    const statusBadge = node.querySelector('.incident-status');
+    const title = node.querySelector('.incident-title');
+    const subtitle = node.querySelector('.incident-subtitle');
+    const summary = node.querySelector('.incident-summary');
+    const description = node.querySelector('.incident-description');
+    const gallery = node.querySelector('.incident-gallery');
+    const mapEl = node.querySelector('.incident-map');
+    const details = node.querySelector('.incident-details');
+    const summaryEl = node.querySelector('summary');
+    summaryEl.textContent = t('card_open');
+
+    typeBadge.textContent = typeLabel(item.type);
+    typeBadge.classList.add(badgeClass('type', item.type));
+    statusBadge.textContent = statusLabel(item.status);
+    statusBadge.classList.add(badgeClass('status', item.status));
+    title.textContent = getLocalizedField(item, 'title');
+    subtitle.textContent = `${t('card_city')}: ${item.city} • ${t('card_date')}: ${item.date}`;
+    summary.textContent = getLocalizedField(item, 'summary');
+
+    const paragraphs = getLocalizedField(item, 'description').split('\n\n').filter(Boolean);
+    description.innerHTML = paragraphs.map((p) => `<p>${p}</p>`).join('') + `<p><em>${t('card_map_note')}</em></p>`;
+
+    if (Array.isArray(item.images) && item.images.length) {
+      gallery.innerHTML = item.images.map((img) => `<a href="${img}" target="_blank" rel="noopener"><img src="${img}" alt="${getLocalizedField(item, 'title')}" loading="lazy"></a>`).join('');
+    } else {
+      gallery.innerHTML = `<p>${t('no_photos')}</p>`;
+    }
+
+    const mapId = `incident-map-${index}`;
+    mapEl.id = mapId;
+    details.addEventListener('toggle', () => {
+      if (details.open && !details.dataset.mapReady) {
+        const map = L.map(mapId, { scrollWheelZoom: false, attributionControl: false }).setView([item.lat, item.lng], 14);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(map);
+        L.circle([item.lat, item.lng], {
+          radius: item.approximate ? 200 : 60,
+          color: colorByType(item.type),
+          fillOpacity: 0.2
+        }).addTo(map);
+        L.marker([item.lat, item.lng]).addTo(map);
+        details.dataset.mapReady = '1';
+        detailMaps.push(map);
+        setTimeout(() => map.invalidateSize(), 50);
+      }
+    });
+
+    list.appendChild(node);
+  });
+}
+
+function colorByType(type) {
+  if (type === 'shooting') return '#a33a32';
+  if (type === 'poisoning') return '#2c7a50';
+  return '#9b6a12';
+}
+
+function renderCitySummary() {
+  const wrap = document.getElementById('citySummary');
+  if (!wrap) return;
+  const counts = incidents.reduce((acc, item) => {
+    acc[item.city] = (acc[item.city] || 0) + 1;
+    return acc;
+  }, {});
+  const cities = Object.keys(counts).sort();
+  wrap.innerHTML = cities.map((city) => `
+    <article class="city-card">
+      <h3>${city}</h3>
+      <p>${countLabel(counts[city])}</p>
+    </article>
+  `).join('');
+}
+
+function initMainMap() {
+  mainMap = L.map('mainMap', { scrollWheelZoom: true, attributionControl: false }).setView([35.1264, 33.4299], 9);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; OpenStreetMap contributors'
+  }).addTo(mainMap);
+  mainMarkersLayer = L.layerGroup().addTo(mainMap);
+  renderMainMap();
+}
+
+function renderMainMap() {
+  if (!mainMap || !mainMarkersLayer) return;
+  mainMarkersLayer.clearLayers();
+  const filtered = getFilteredIncidents();
+  const bounds = [];
+  filtered.forEach((item) => {
+    const marker = L.circleMarker([item.lat, item.lng], {
+      radius: 8,
+      color: colorByType(item.type),
+      fillColor: colorByType(item.type),
+      fillOpacity: 0.9,
+      weight: 1
+    });
+    marker.bindPopup(`
+      <div class="popup-title">${getLocalizedField(item, 'title')}</div>
+      <div class="popup-meta">${item.city} • ${item.date} • ${typeLabel(item.type)}</div>
+      <div>${getLocalizedField(item, 'summary')}</div>
+    `);
+    marker.addTo(mainMarkersLayer);
+    bounds.push([item.lat, item.lng]);
+  });
+  if (bounds.length) {
+    mainMap.fitBounds(bounds, { padding: [40, 40] });
+  } else {
+    mainMap.setView([35.1264, 33.4299], 9);
+  }
+}
+
+function attachForm() {
+  const form = document.getElementById('reportForm');
+  const status = document.getElementById('formStatus');
+  if (!form) return;
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    status.textContent = t('form_sending');
+    const formData = new FormData(form);
+    try {
+      const response = await fetch(form.action, {
+        method: 'POST',
+        body: formData
+      });
+      const result = await response.json();
+      if (result.success) {
+        status.textContent = t('form_ok');
+        form.reset();
+      } else {
+        status.textContent = t('form_fail');
+      }
+    } catch (err) {
+      status.textContent = t('form_fail');
+    }
+  });
+}
+
+document.addEventListener('DOMContentLoaded', async () => {
+  currentLang = detectLanguage();
+  document.getElementById('year').textContent = new Date().getFullYear();
+  document.querySelectorAll('.lang-btn').forEach((btn) => btn.addEventListener('click', () => setLanguage(btn.dataset.lang)));
+  setLanguage(currentLang);
+  await loadIncidents();
+  setLanguage(currentLang);
+});

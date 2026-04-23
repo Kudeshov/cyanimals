@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="site_title">Cats of Cyprus — Incident Map and Reports</title>
+  <meta name="description" content="Documenting violence against cats in Cyprus, collecting reports, and supporting public attention to incidents." />
+  <link rel="preconnect" href="https://unpkg.com" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="brand">
+        <span class="brand-icon">🐾</span>
+        <span class="brand-text" data-i18n="brand_name">Cats of Cyprus</span>
+      </a>
+
+      <nav class="main-nav">
+        <a href="#about" data-i18n="nav_about">About</a>
+        <a href="#map-section" data-i18n="nav_map">Map</a>
+        <a href="#incidents" data-i18n="nav_incidents">Incidents</a>
+        <a href="#cities" data-i18n="nav_cities">Cities</a>
+        <a href="#report" data-i18n="nav_report">Report incident</a>
+      </nav>
+
+      <div class="lang-switcher" aria-label="Language switcher">
+        <button class="lang-btn" data-lang="ru">RU</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="el">EL</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow" data-i18n="hero_eyebrow">Public attention and documentation</p>
+          <h1 data-i18n="hero_title">Documenting violence against cats in Cyprus</h1>
+          <p class="hero-text" data-i18n="hero_text">
+            This site collects verified and reported incidents, shows where they happened, and helps people submit new information.
+          </p>
+          <div class="hero-actions">
+            <a href="#incidents" class="btn btn-primary" data-i18n="hero_btn_incidents">View incidents</a>
+            <a href="#report" class="btn btn-secondary" data-i18n="hero_btn_report">Send information</a>
+          </div>
+        </div>
+        <aside class="hero-panel">
+          <div class="contact-card">
+            <h2 data-i18n="hero_panel_contact">Project Lead</h2>
+            <div class="contact-info">
+              <p class="contact-name" data-i18n="contact_name">Olga Korobintseva</p>
+              <p class="contact-label" data-i18n="contact_phone_label">Phone:</p>
+              <p class="contact-value"><a href="tel:+35796335301">+357 96 335301</a></p>
+              <p class="contact-label" data-i18n="contact_email_label">E-mail:</p>
+              <p class="contact-value"><a href="mailto:korobintseva.olga@gmail.com">korobintseva.olga@gmail.com</a></p>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container narrow">
+        <h2 data-i18n="about_title">About the project</h2>
+        <p data-i18n="about_p1">
+          The project is dedicated to documenting incidents involving shootings, poisoning and other violence against cats in Cyprus.
+        </p>
+      </div>
+    </section>
+
+    <section id="map-section" class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2 data-i18n="map_title">Incident map</h2>
+            <p data-i18n="map_text">Markers show the approximate locations of incidents currently included on the site.</p>
+          </div>
+          <div class="map-legend">
+            <span><i class="dot dot-red"></i><span data-i18n="legend_shooting">Shooting</span></span>
+            <span><i class="dot dot-green"></i><span data-i18n="legend_poisoning">Poisoning</span></span>
+            <span><i class="dot dot-amber"></i><span data-i18n="legend_other">Other</span></span>
+          </div>
+        </div>
+        <div id="mainMap" class="main-map" aria-label="Cyprus incidents map"></div>
+      </div>
+    </section>
+
+    <section id="incidents" class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2 data-i18n="incidents_title">Incident cards</h2>
+            <p data-i18n="incidents_text">Each card can include description, status, city, date, photos and an individual map.</p>
+          </div>
+          <div class="filters">
+            <label>
+              <span data-i18n="filter_city">City</span>
+              <select id="cityFilter">
+                <option value="all" data-i18n="filter_all">All</option>
+              </select>
+            </label>
+            <label>
+              <span data-i18n="filter_type">Type</span>
+              <select id="typeFilter">
+                <option value="all" data-i18n="filter_all">All</option>
+                <option value="shooting" data-i18n="type_shooting">Shooting</option>
+                <option value="poisoning" data-i18n="type_poisoning">Poisoning</option>
+                <option value="other" data-i18n="type_other">Other</option>
+              </select>
+            </label>
+          </div>
+        </div>
+        <div id="incidentList" class="incident-list"></div>
+      </div>
+    </section>
+
+    <section id="cities" class="section section-alt">
+      <div class="container">
+        <h2 data-i18n="cities_title">Cities of Cyprus</h2>
+        <div id="citySummary" class="city-grid"></div>
+      </div>
+    </section>
+
+    <section id="report" class="section">
+      <div class="container report-grid">
+        <div>
+          <h2 data-i18n="report_title">Send information</h2>
+          <p data-i18n="report_text">
+            Use the form to send information about a new incident, to clarify an existing case, or to contact the project team.
+          </p>
+          <div class="note-box">
+            <strong data-i18n="report_note_title">Privacy note:</strong>
+            <span data-i18n="report_note_text">Do not include personal addresses, phone numbers or names of private individuals unless you have a clear legal basis and consent to share them.</span>
+          </div>
+        </div>
+
+        <form id="reportForm" class="report-form" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="aad831cc-35a0-419d-bf7f-70dc394b9635" />
+          <input type="hidden" name="subject" value="Cyprus Cats website form" />
+          <input type="hidden" name="from_name" value="Cyprus Cats website" />
+          <input type="checkbox" name="botcheck" class="hidden-botcheck" tabindex="-1" autocomplete="off" />
+
+          <label>
+            <span data-i18n="form_type">Message type</span>
+            <select name="message_type" required>
+              <option value="new_incident" data-i18n="form_type_new">New incident</option>
+              <option value="incident_update" data-i18n="form_type_update">Information about existing incident</option>
+              <option value="general" data-i18n="form_type_general">Other question</option>
+            </select>
+          </label>
+
+          <label>
+            <span data-i18n="form_name">Your name</span>
+            <input type="text" name="name" maxlength="120" required />
+          </label>
+
+          <label>
+            <span data-i18n="form_email">Your e-mail</span>
+            <input type="email" name="email" maxlength="160" required />
+          </label>
+
+          <label>
+            <span data-i18n="form_city">City / district</span>
+            <input type="text" name="city" maxlength="120" />
+          </label>
+
+          <label>
+            <span data-i18n="form_incident_type">Incident type</span>
+            <select name="incident_type">
+              <option value="shooting" data-i18n="type_shooting">Shooting</option>
+              <option value="poisoning" data-i18n="type_poisoning">Poisoning</option>
+              <option value="other" data-i18n="type_other">Other</option>
+            </select>
+          </label>
+
+          <label>
+            <span data-i18n="form_date">Date of incident</span>
+            <input type="date" name="incident_date" />
+          </label>
+
+          <label>
+            <span data-i18n="form_message">Description</span>
+            <textarea name="message" rows="7" maxlength="4000" required></textarea>
+          </label>
+
+          <label class="consent-row">
+            <input type="checkbox" name="consent" required />
+            <span data-i18n="form_consent">I understand that the submitted information may be reviewed and used for follow-up contact.</span>
+          </label>
+
+          <button type="submit" class="btn btn-primary" data-i18n="form_send">Send</button>
+          <p id="formStatus" class="form-status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> <span data-i18n="footer_project">Cats of Cyprus</span></p>
+      <p data-i18n="footer_hint">Static site with JSON-based incident cards and Leaflet maps.</p>
+    </div>
+  </footer>
+
+  <template id="incidentCardTemplate">
+    <article class="incident-card">
+      <div class="incident-card-head">
+        <div>
+          <div class="incident-meta-row">
+            <span class="incident-badge incident-type"></span>
+            <span class="incident-badge incident-status"></span>
+          </div>
+          <h3 class="incident-title"></h3>
+          <p class="incident-subtitle"></p>
+        </div>
+      </div>
+      <div class="incident-body">
+        <p class="incident-summary"></p>
+        <details class="incident-details">
+          <summary data-i18n="card_open">Open full card</summary>
+          <div class="incident-details-content">
+            <div class="incident-description"></div>
+            <div class="incident-gallery"></div>
+            <div class="incident-map"></div>
+          </div>
+        </details>
+      </div>
+    </article>
+  </template>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

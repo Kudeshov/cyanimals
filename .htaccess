@@ -1,0 +1,14 @@
+AddDefaultCharset UTF-8
+
+<IfModule mod_mime.c>
+  AddType 'text/html; charset=UTF-8' .html .htm
+  AddType 'text/css; charset=UTF-8' .css
+  AddType 'application/javascript; charset=UTF-8' .js
+  AddType 'application/json; charset=UTF-8' .json
+</IfModule>
+
+<IfModule mod_headers.c>
+  <FilesMatch "\.(html|htm|css|js|json)$">
+    Header set Charset "UTF-8"
+  </FilesMatch>
+</IfModule>
