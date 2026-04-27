@@ -273,5 +273,30 @@
       "incidents/limassol-2025-02-20-012/1.jpg",
       "incidents/limassol-2025-02-20-012/2.jpg"
     ]
+  },
+  {
+    "id": "ormideia-2026-03-20-009",
+    "city": "Larnaca",
+    "district": "Ormidia",
+    "title": {
+      "ru": "Кот с множественными ранениями от дроби в Ормидии",
+      "en": "Cat with multiple pellet wounds in Ormidia",
+      "el": "Γάτα με πολλαπλά τραύματα από σφαιρίδια στην Ορμίδεια"
+    },
+    "date": "2026-03-20",
+    "lat": 34.99177034731356,
+    "lng": 33.77963008113551,
+    "approximate": true,
+    "type": "shooting",
+    "status": "injured",
+    "description": {
+      "ru": "В Ормидии обнаружена кошка с множественными ранениями от дроби. Кошка страдает от почечной недостаточности, FIP и травмы от стрельбы. В районе также отмечены случаи с капканами, угрозами и подозрениями на отравления.",
+      "en": "A cat with multiple pellet wounds was found in Ormidia. The cat is suffering from kidney failure, FIP, and gunshot trauma. The area has also seen cases of snares, threats, and suspected poisonings.",
+      "el": "Μια γάτα με πολλαπλά τραύματα από σφαιρίδια βρέθηκε στην Ορμίδεια. Η γάτα υποφέρει από νεφρική ανεπάρκεια, FIP και τραύμα από πυροβολισμό. Η περιοχή έχει επίσης δει περιπτώσεις παγίδων, απειλών και υποψιών δηλητηριάσεων."
+    },
+    "images": [
+      "incidents/ormideia-2026-03-20-009/1.jpg",
+      "incidents/ormideia-2026-03-20-009/2.jpg"
+    ]
   }
 ]
