@@ -1,49 +1,217 @@
 const translations = {
   ru: {
-    site_title: 'Животные Кипра — карта и карточки инцидентов',
-    brand_name: 'Животные Кипра', nav_about: 'О проекте', nav_map: 'Карта', nav_incidents: 'Инциденты', nav_cities: 'Города', nav_report: 'Сообщить',
-    hero_eyebrow: 'Публичное внимание и документирование', hero_title: 'Документирование насилия против животных на Кипре',
+    site_title: 'Животные Кипра - карта и карточки инцидентов',
+    brand_name: 'Животные Кипра',
+    nav_about: 'О проекте',
+    nav_map: 'Карта',
+    nav_incidents: 'Инциденты',
+    nav_cities: 'Города',
+    nav_report: 'Сообщить',
+    hero_eyebrow: 'Публичное внимание и документирование',
+    hero_title: 'Документирование насилия против животных на Кипре',
     hero_text: 'Сайт собирает подтвержденные и поступившие сообщения об инцидентах, показывает их на карте и помогает передавать новую информацию.',
-    hero_btn_incidents: 'Смотреть инциденты', hero_btn_report: 'Передать информацию', 
+    hero_btn_incidents: 'Смотреть инциденты',
+    hero_btn_report: 'Передать информацию',
     hero_panel_contact: 'Проект принадлежит:',
     contact_name: 'Ольга Коробинцева',
     contact_phone_label: 'Телефон:',
     contact_email_label: 'E-mail:',
-    about_title: 'О проекте', about_p1: 'На территории Республики Кипр регулярно совершаются акты насилия в отношении животных. Указанные акты носят системный характер и не являются единичными случаями. Фиксируются случаи причинения животным боли, тяжких страданий и смерти. Собранные материалы (сообщения, фото-, видео- и документальные доказательства) используются для информирования общества и органов власти с целью привлечения виновных к ответственности. Насилие должно быть прекращено.',
-    map_title: 'Карта инцидентов', map_text: 'Маркеры показывают примерные места инцидентов, которые сейчас добавлены на сайт.',
-    legend_shooting: 'Стрельба', legend_poisoning: 'Отравление', legend_other: 'Другое',
-    incidents_title: 'Карточки инцидентов', incidents_text: 'В каждой карточке могут быть описание, статус, город, дата, фотографии и отдельная карта.',
-    filter_city: 'Город', filter_type: 'Тип', filter_all: 'Все',
-    cities_title: 'Города Кипра', report_title: 'Передать информацию', report_text: 'Используйте форму, чтобы сообщить о новом инциденте, уточнить уже известный случай или связаться с командой проекта.', report_note_title: 'Примечание о конфиденциальности:', report_note_text: 'Не указывайте личные адреса, телефоны и имена частных лиц, если у вас нет четкого законного основания и согласия на публикацию.',
-    form_type: 'Тип сообщения', form_type_new: 'Новый инцидент', form_type_update: 'Информация по существующему инциденту', form_type_general: 'Другой вопрос', form_name: 'Ваше имя', form_email: 'Ваш e-mail', form_city: 'Город / район', form_incident_type: 'Тип инцидента', form_date: 'Дата инцидента', form_message: 'Описание', form_consent: 'Я понимаю, что отправленная информация может быть рассмотрена и использована для обратной связи.', form_send: 'Отправить',
-    footer_project: 'Животные Кипра', footer_hint: 'Проект посвящен документированию насилия против животных на Кипре и привлечению общественного внимания к этой проблеме.',
-    card_open: 'Открыть полную карточку', type_shooting: 'Стрельба', type_poisoning: 'Отравление', type_other: 'Другое', status_reported: 'Сообщение', status_pending: 'Ожидает результатов', status_confirmed: 'Подтверждено', status_dead: 'Погиб', status_injured: 'Ранен',
-    card_date: 'Дата', card_city: 'Город', card_map_note: 'Точка на карте указана примерно.', popup_link: 'Открыть карточку',
-    no_photos: 'Фотографии пока не добавлены.', city_count_one: 'инцидент', city_count_few: 'инцидента', city_count_many: 'инцидентов',
-    form_sending: 'Отправка...', form_ok: 'Сообщение отправлено.', form_fail: 'Не удалось отправить форму. Проверьте ключ Web3Forms.'
+    about_title: 'О проекте',
+    about_p1: 'На территории Республики Кипр регулярно совершаются акты насилия в отношении животных. Указанные акты носят системный характер и не являются единичными случаями. Фиксируются случаи причинения животным боли, тяжких страданий и смерти. Собранные материалы (сообщения, фото-, видео- и документальные доказательства) используются для информирования общества и органов власти с целью привлечения виновных к ответственности. Насилие должно быть прекращено.',
+    map_title: 'Карта инцидентов',
+    map_text: 'Маркеры показывают примерные места инцидентов, которые сейчас добавлены на сайт.',
+    legend_shooting: 'Стрельба',
+    legend_poisoning: 'Отравление',
+    legend_other: 'Другое',
+    incidents_title: 'Карточки инцидентов',
+    incidents_text: 'В каждой карточке могут быть описание, статус, город, дата, фотографии и отдельная карта.',
+    filter_city: 'Город',
+    filter_type: 'Тип',
+    filter_all: 'Все',
+    cities_title: 'Города Кипра',
+    report_title: 'Передать информацию',
+    report_text: 'Используйте форму, чтобы сообщить о новом инциденте, уточнить уже известный случай или связаться с командой проекта.',
+    report_note_title: 'Примечание о конфиденциальности:',
+    report_note_text: 'Не указывайте личные адреса, телефоны и имена частных лиц, если у вас нет четкого законного основания и согласия на публикацию.',
+    form_type: 'Тип сообщения',
+    form_type_new: 'Новый инцидент',
+    form_type_update: 'Информация по существующему инциденту',
+    form_type_general: 'Другой вопрос',
+    form_name: 'Ваше имя',
+    form_email: 'Ваш e-mail',
+    form_city: 'Город / район',
+    form_incident_type: 'Тип инцидента',
+    form_date: 'Дата инцидента',
+    form_message: 'Описание',
+    form_consent: 'Я понимаю, что отправленная информация может быть рассмотрена и использована для обратной связи.',
+    form_send: 'Отправить',
+    footer_project: 'Животные Кипра',
+    footer_hint: 'Проект посвящен документированию насилия против животных на Кипре и привлечению общественного внимания к этой проблеме.',
+    card_open: 'Открыть полную карточку',
+    type_shooting: 'Стрельба',
+    type_poisoning: 'Отравление',
+    type_other: 'Другое',
+    status_reported: 'Сообщение',
+    status_pending: 'Ожидает результатов',
+    status_confirmed: 'Подтверждено',
+    status_dead: 'Погиб',
+    status_injured: 'Ранен',
+    card_date: 'Дата',
+    card_city: 'Город',
+    card_map_note: 'Точка на карте указана примерно.',
+    popup_link: 'Открыть карточку',
+    no_photos: 'Фотографии пока не добавлены.',
+    city_count_one: 'инцидент',
+    city_count_few: 'инцидента',
+    city_count_many: 'инцидентов',
+    form_sending: 'Отправка...',
+    form_ok: 'Сообщение отправлено.',
+    form_fail: 'Не удалось отправить форму. Проверьте ключ Web3Forms.'
   },
   en: {
-    site_title: 'Animals of Cyprus — incident map and cards', brand_name: 'Animals of Cyprus', nav_about: 'About', nav_map: 'Map', nav_incidents: 'Incidents', nav_cities: 'Cities', nav_report: 'Report',
-    hero_eyebrow: 'Public attention and documentation', hero_title: 'Documenting violence against animals in Cyprus', hero_text: 'This site collects verified and reported incidents, shows where they happened, and helps people submit new information.', hero_btn_incidents: 'View incidents', hero_btn_report: 'Send information', 
+    site_title: 'Animals of Cyprus - incident map and cards',
+    brand_name: 'Animals of Cyprus',
+    nav_about: 'About',
+    nav_map: 'Map',
+    nav_incidents: 'Incidents',
+    nav_cities: 'Cities',
+    nav_report: 'Report',
+    hero_eyebrow: 'Public attention and documentation',
+    hero_title: 'Documenting violence against animals in Cyprus',
+    hero_text: 'This site collects verified and reported incidents, shows where they happened, and helps people submit new information.',
+    hero_btn_incidents: 'View incidents',
+    hero_btn_report: 'Send information',
     hero_panel_contact: 'Project owner:',
     contact_name: 'Olga Korobintseva',
     contact_phone_label: 'Phone:',
     contact_email_label: 'E-mail:',
-    about_title: 'About the project', about_p1: 'Acts of violence against animals are regularly committed in the Republic of Cyprus. These acts are systemic in nature and are not isolated incidents. Cases are documented in which animals are subjected to pain, severe suffering, and death. Collected materials, including reports, photo, video, and documentary evidence, are used to inform the public and the authorities in order to hold those responsible accountable. The violence must be stopped.',
-    map_title: 'Incident map', map_text: 'Markers show the approximate locations of incidents currently included on the site.', legend_shooting: 'Shooting', legend_poisoning: 'Poisoning', legend_other: 'Other', incidents_title: 'Incident cards', incidents_text: 'Each card can include description, status, city, date, photos and an individual map.', filter_city: 'City', filter_type: 'Type', filter_all: 'All', cities_title: 'Cities of Cyprus', report_title: 'Send information', report_text: 'Use the form to send information about a new incident, to clarify an existing case, or to contact the project team.', report_note_title: 'Privacy note:', report_note_text: 'Do not include personal addresses, phone numbers or names of private individuals unless you have a clear legal basis and consent to share them.',
-    form_type: 'Message type', form_type_new: 'New incident', form_type_update: 'Information about existing incident', form_type_general: 'Other question', form_name: 'Your name', form_email: 'Your e-mail', form_city: 'City / district', form_incident_type: 'Incident type', form_date: 'Date of incident', form_message: 'Description', form_consent: 'I understand that the submitted information may be reviewed and used for follow-up contact.', form_send: 'Send', footer_project: 'Animals of Cyprus', footer_hint: 'A project dedicated to documenting violence against animals in Cyprus and raising public awareness of this issue.', card_open: 'Open full card', type_shooting: 'Shooting', type_poisoning: 'Poisoning', type_other: 'Other', status_reported: 'Reported', status_pending: 'Pending results', status_confirmed: 'Confirmed', status_dead: 'Deceased', status_injured: 'Injured', card_date: 'Date', card_city: 'City', card_map_note: 'Map location is approximate.', popup_link: 'Open card', no_photos: 'No photos added yet.', city_count_one: 'incident', city_count_few: 'incidents', city_count_many: 'incidents', form_sending: 'Sending...', form_ok: 'Message sent.', form_fail: 'Could not send the form. Check the Web3Forms key.'
+    about_title: 'About the project',
+    about_p1: 'Acts of violence against animals are regularly committed in the Republic of Cyprus. These acts are systemic in nature and are not isolated incidents. Cases are documented in which animals are subjected to pain, severe suffering, and death. Collected materials, including reports, photo, video, and documentary evidence, are used to inform the public and the authorities in order to hold those responsible accountable. The violence must be stopped.',
+    map_title: 'Incident map',
+    map_text: 'Markers show the approximate locations of incidents currently included on the site.',
+    legend_shooting: 'Shooting',
+    legend_poisoning: 'Poisoning',
+    legend_other: 'Other',
+    incidents_title: 'Incident cards',
+    incidents_text: 'Each card can include description, status, city, date, photos and an individual map.',
+    filter_city: 'City',
+    filter_type: 'Type',
+    filter_all: 'All',
+    cities_title: 'Cities of Cyprus',
+    report_title: 'Send information',
+    report_text: 'Use the form to send information about a new incident, to clarify an existing case, or to contact the project team.',
+    report_note_title: 'Privacy note:',
+    report_note_text: 'Do not include personal addresses, phone numbers or names of private individuals unless you have a clear legal basis and consent to share them.',
+    form_type: 'Message type',
+    form_type_new: 'New incident',
+    form_type_update: 'Information about existing incident',
+    form_type_general: 'Other question',
+    form_name: 'Your name',
+    form_email: 'Your e-mail',
+    form_city: 'City / district',
+    form_incident_type: 'Incident type',
+    form_date: 'Date of incident',
+    form_message: 'Description',
+    form_consent: 'I understand that the submitted information may be reviewed and used for follow-up contact.',
+    form_send: 'Send',
+    footer_project: 'Animals of Cyprus',
+    footer_hint: 'A project dedicated to documenting violence against animals in Cyprus and raising public awareness of this issue.',
+    card_open: 'Open full card',
+    type_shooting: 'Shooting',
+    type_poisoning: 'Poisoning',
+    type_other: 'Other',
+    status_reported: 'Reported',
+    status_pending: 'Pending results',
+    status_confirmed: 'Confirmed',
+    status_dead: 'Deceased',
+    status_injured: 'Injured',
+    card_date: 'Date',
+    card_city: 'City',
+    card_map_note: 'Map location is approximate.',
+    popup_link: 'Open card',
+    no_photos: 'No photos added yet.',
+    city_count_one: 'incident',
+    city_count_few: 'incidents',
+    city_count_many: 'incidents',
+    form_sending: 'Sending...',
+    form_ok: 'Message sent.',
+    form_fail: 'Could not send the form. Check the Web3Forms key.'
   },
   el: {
-    site_title: 'Ζώα της Κύπρου — χάρτης και κάρτες περιστατικών', brand_name: 'Ζώα της Κύπρου', nav_about: 'Σχετικά', nav_map: 'Χάρτης', nav_incidents: 'Περιστατικά', nav_cities: 'Πόλεις', nav_report: 'Αναφορά',
-    hero_eyebrow: 'Δημόσια προσοχή και τεκμηρίωση', hero_title: 'Τεκμηρίωση βίας κατά ζώων στην Κύπρο', hero_text: 'Ο ιστότοπος συγκεντρώνει επιβεβαιωμένα και αναφερόμενα περιστατικά, τα δείχνει στον χάρτη και βοηθά στην αποστολή νέων πληροφοριών.', hero_btn_incidents: 'Δείτε περιστατικά', hero_btn_report: 'Στείλτε πληροφορίες', 
-    hero_panel_contact: 'Αρχηγός έργου',
+    site_title: 'Ζώα της Κύπρου - χάρτης και κάρτες περιστατικών',
+    brand_name: 'Ζώα της Κύπρου',
+    nav_about: 'Σχετικά',
+    nav_map: 'Χάρτης',
+    nav_incidents: 'Περιστατικά',
+    nav_cities: 'Πόλεις',
+    nav_report: 'Αναφορά',
+    hero_eyebrow: 'Δημόσια προσοχή και τεκμηρίωση',
+    hero_title: 'Τεκμηρίωση βίας κατά ζώων στην Κύπρο',
+    hero_text: 'Ο ιστότοπος συγκεντρώνει επιβεβαιωμένα και αναφερόμενα περιστατικά, τα δείχνει στον χάρτη και βοηθά στην αποστολή νέων πληροφοριών.',
+    hero_btn_incidents: 'Δείτε περιστατικά',
+    hero_btn_report: 'Στείλτε πληροφορίες',
+    hero_panel_contact: 'Υπεύθυνη έργου:',
     contact_name: 'Όλγα Κορομπίντσεβα',
     contact_phone_label: 'Τηλέφωνο:',
     contact_email_label: 'E-mail:',
-    about_title: 'Σχετικά με το έργο', about_p1: 'Στην Κυπριακή Δημοκρατία διαπράττονται τακτικά πράξεις βίας κατά των ζώων. Οι πράξεις αυτές έχουν συστημικό χαρακτήρα και δεν αποτελούν μεμονωμένα περιστατικά. Καταγράφονται περιπτώσεις πρόκλησης πόνου, βαριάς οδύνης και θανάτου στα ζώα. Το συγκεντρωμένο υλικό, συμπεριλαμβανομένων αναφορών, φωτογραφιών, βίντεο και τεκμηριωτικών αποδείξεων, χρησιμοποιείται για την ενημέρωση της κοινωνίας και των αρχών με στόχο την απόδοση ευθυνών στους υπαίτιους. Η βία πρέπει να σταματήσει.',
-    map_title: 'Χάρτης περιστατικών', map_text: 'Οι δείκτες δείχνουν τις κατά προσέγγιση τοποθεσίες των περιστατικών που έχουν προστεθεί στον ιστότοπο.', legend_shooting: 'Πυροβολισμός', legend_poisoning: 'Δηλητηρίαση', legend_other: 'Άλλο', incidents_title: 'Κάρτες περιστατικών', incidents_text: 'Κάθε κάρτα μπορεί να περιλαμβάνει περιγραφή, κατάσταση, πόλη, ημερομηνία, φωτογραφίες και ξεχωριστό χάρτη.', filter_city: 'Πόλη', filter_type: 'Τύπος', filter_all: 'Όλα', cities_title: 'Πόλεις της Κύπρου', report_title: 'Στείλτε πληροφορίες', report_text: 'Χρησιμοποιήστε τη φόρμα για νέο περιστατικό, για διευκρίνιση υπάρχουσας υπόθεσης ή για επικοινωνία με την ομάδα του έργου.', report_note_title: 'Σημείωση ιδιωτικότητας:', report_note_text: 'Μην συμπεριλαμβάνετε προσωπικές διευθύνσεις, τηλέφωνα ή ονόματα ιδιωτών, εκτός αν έχετε σαφή νομική βάση και συγκατάθεση για κοινοποίηση.',
-    form_type: 'Τύπος μηνύματος', form_type_new: 'Νέο περιστατικό', form_type_update: 'Πληροφορίες για υπάρχον περιστατικό', form_type_general: 'Άλλη ερώτηση', form_name: 'Το όνομά σας', form_email: 'Το e-mail σας', form_city: 'Πόλη / περιοχή', form_incident_type: 'Τύπος περιστατικού', form_date: 'Ημερομηνία περιστατικού', form_message: 'Περιγραφή', form_consent: 'Κατανοώ ότι οι υποβληθείσες πληροφορίες μπορεί να εξεταστούν και να χρησιμοποιηθούν για επικοινωνία.', form_send: 'Αποστολή', footer_project: 'Ζώα της Κύπρου', footer_hint: 'Ένα έργο αφιερωμένο στην τεκμηρίωση βίας κατά ζώων στην Κύπρο και στη δημιουργία δημόσιας συνείδησης για αυτό το θέμα.', card_open: 'Άνοιγμα πλήρους κάρτας', type_shooting: 'Πυροβολισμός', type_poisoning: 'Δηλητηρίαση', type_other: 'Άλλο', status_reported: 'Αναφορά', status_pending: 'Αναμονή αποτελεσμάτων', status_confirmed: 'Επιβεβαιωμένο', status_dead: 'Νεκρό', status_injured: 'Τραυματισμένος', card_date: 'Ημερομηνία', card_city: 'Πόλη', card_map_note: 'Η τοποθεσία στον χάρτη είναι κατά προσέγγιση.', popup_link: 'Άνοιγμα κάρτας', no_photos: 'Δεν έχουν προστεθεί ακόμη φωτογραφίες.', city_count_one: 'περιστατικό', city_count_few: 'περιστατικά', city_count_many: 'περιστατικά', form_sending: 'Αποστολή...', form_ok: 'Το μήνυμα στάλθηκε.', form_fail: 'Η φόρμα δεν στάλθηκε. Ελέγξτε το κλειδί Web3Forms.'
+    about_title: 'Σχετικά με το έργο',
+    about_p1: 'Στην Κυπριακή Δημοκρατία διαπράττονται τακτικά πράξεις βίας κατά των ζώων. Οι πράξεις αυτές έχουν συστημικό χαρακτήρα και δεν αποτελούν μεμονωμένα περιστατικά. Καταγράφονται περιπτώσεις πρόκλησης πόνου, βαριάς οδύνης και θανάτου στα ζώα. Το συγκεντρωμένο υλικό, συμπεριλαμβανομένων αναφορών, φωτογραφιών, βίντεο και τεκμηριωτικών αποδείξεων, χρησιμοποιείται για την ενημέρωση της κοινωνίας και των αρχών με στόχο την απόδοση ευθυνών στους υπαίτιους. Η βία πρέπει να σταματήσει.',
+    map_title: 'Χάρτης περιστατικών',
+    map_text: 'Οι δείκτες δείχνουν τις κατά προσέγγιση τοποθεσίες των περιστατικών που έχουν προστεθεί στον ιστότοπο.',
+    legend_shooting: 'Πυροβολισμός',
+    legend_poisoning: 'Δηλητηρίαση',
+    legend_other: 'Άλλο',
+    incidents_title: 'Κάρτες περιστατικών',
+    incidents_text: 'Κάθε κάρτα μπορεί να περιλαμβάνει περιγραφή, κατάσταση, πόλη, ημερομηνία, φωτογραφίες και ξεχωριστό χάρτη.',
+    filter_city: 'Πόλη',
+    filter_type: 'Τύπος',
+    filter_all: 'Όλα',
+    cities_title: 'Πόλεις της Κύπρου',
+    report_title: 'Στείλτε πληροφορίες',
+    report_text: 'Χρησιμοποιήστε τη φόρμα για νέο περιστατικό, για διευκρίνιση υπάρχουσας υπόθεσης ή για επικοινωνία με την ομάδα του έργου.',
+    report_note_title: 'Σημείωση ιδιωτικότητας:',
+    report_note_text: 'Μην συμπεριλαμβάνετε προσωπικές διευθύνσεις, τηλέφωνα ή ονόματα ιδιωτών, εκτός αν έχετε σαφή νομική βάση και συγκατάθεση για κοινοποίηση.',
+    form_type: 'Τύπος μηνύματος',
+    form_type_new: 'Νέο περιστατικό',
+    form_type_update: 'Πληροφορίες για υπάρχον περιστατικό',
+    form_type_general: 'Άλλη ερώτηση',
+    form_name: 'Το όνομά σας',
+    form_email: 'Το e-mail σας',
+    form_city: 'Πόλη / περιοχή',
+    form_incident_type: 'Τύπος περιστατικού',
+    form_date: 'Ημερομηνία περιστατικού',
+    form_message: 'Περιγραφή',
+    form_consent: 'Κατανοώ ότι οι υποβληθείσες πληροφορίες μπορεί να εξεταστούν και να χρησιμοποιηθούν για επικοινωνία.',
+    form_send: 'Αποστολή',
+    footer_project: 'Ζώα της Κύπρου',
+    footer_hint: 'Ένα έργο αφιερωμένο στην τεκμηρίωση βίας κατά ζώων στην Κύπρο και στη δημιουργία δημόσιας συνείδησης για αυτό το θέμα.',
+    card_open: 'Άνοιγμα πλήρους κάρτας',
+    type_shooting: 'Πυροβολισμός',
+    type_poisoning: 'Δηλητηρίαση',
+    type_other: 'Άλλο',
+    status_reported: 'Αναφορά',
+    status_pending: 'Αναμονή αποτελεσμάτων',
+    status_confirmed: 'Επιβεβαιωμένο',
+    status_dead: 'Νεκρό',
+    status_injured: 'Τραυματισμένο',
+    card_date: 'Ημερομηνία',
+    card_city: 'Πόλη',
+    card_map_note: 'Η τοποθεσία στον χάρτη είναι κατά προσέγγιση.',
+    popup_link: 'Άνοιγμα κάρτας',
+    no_photos: 'Δεν έχουν προστεθεί ακόμη φωτογραφίες.',
+    city_count_one: 'περιστατικό',
+    city_count_few: 'περιστατικά',
+    city_count_many: 'περιστατικά',
+    form_sending: 'Αποστολή...',
+    form_ok: 'Το μήνυμα στάλθηκε.',
+    form_fail: 'Η φόρμα δεν στάλθηκε. Ελέγξτε το κλειδί Web3Forms.'
   }
+};
+
+const cityTranslations = {
+  Limassol: { ru: 'Лимасол', en: 'Limassol', el: 'Λεμεσός' },
+  Larnaca: { ru: 'Ларнака', en: 'Larnaca', el: 'Λάρνακα' },
+  Pafos: { ru: 'Пафос', en: 'Pafos', el: 'Πάφος' }
 };
 
 let currentLang = 'ru';
@@ -65,6 +233,10 @@ function t(key) {
   return translations[currentLang]?.[key] ?? translations.ru[key] ?? key;
 }
 
+function localizeCityName(city) {
+  return cityTranslations[city]?.[currentLang] || city;
+}
+
 function setLanguage(lang) {
   if (!translations[lang]) return;
   currentLang = lang;
@@ -76,6 +248,7 @@ function setLanguage(lang) {
     el.textContent = t(key);
   });
   document.querySelectorAll('.lang-btn').forEach((btn) => btn.classList.toggle('active', btn.dataset.lang === lang));
+  populateCityFilter();
   renderIncidents();
   renderCitySummary();
   renderMainMap();
@@ -103,8 +276,13 @@ function getLocalizedField(obj, field) {
   return value[currentLang] || value.ru || value.en || value.el || '';
 }
 
-function typeLabel(type) { return t(`type_${type}`) || type; }
-function statusLabel(status) { return t(`status_${status}`) || status; }
+function typeLabel(type) {
+  return t(`type_${type}`) || type;
+}
+
+function statusLabel(status) {
+  return t(`status_${status}`) || status;
+}
 
 function badgeClass(prefix, value) {
   return `badge-${value || prefix}`;
@@ -122,16 +300,29 @@ async function loadIncidents() {
 
 function populateCityFilter() {
   const select = document.getElementById('cityFilter');
+  if (!select) return;
+
+  const selectedValue = select.value || 'all';
   const cities = [...new Set(incidents.map((item) => item.city))].sort();
-  select.innerHTML = `<option value="all">${t('filter_all')}</option>` + cities.map((city) => `<option value="${city}">${city}</option>`).join('');
-  document.getElementById('cityFilter').addEventListener('change', () => {
-    renderIncidents();
-    renderMainMap();
-  });
-  document.getElementById('typeFilter').addEventListener('change', () => {
-    renderIncidents();
-    renderMainMap();
-  });
+  select.innerHTML = `<option value="all">${t('filter_all')}</option>` + cities.map((city) => `<option value="${city}">${localizeCityName(city)}</option>`).join('');
+  select.value = cities.includes(selectedValue) || selectedValue === 'all' ? selectedValue : 'all';
+
+  if (!select.dataset.bound) {
+    select.addEventListener('change', () => {
+      renderIncidents();
+      renderMainMap();
+    });
+    select.dataset.bound = '1';
+  }
+
+  const typeFilter = document.getElementById('typeFilter');
+  if (typeFilter && !typeFilter.dataset.bound) {
+    typeFilter.addEventListener('change', () => {
+      renderIncidents();
+      renderMainMap();
+    });
+    typeFilter.dataset.bound = '1';
+  }
 }
 
 function getFilteredIncidents() {
@@ -169,7 +360,7 @@ function renderIncidents() {
     statusBadge.textContent = statusLabel(item.status);
     statusBadge.classList.add(badgeClass('status', item.status));
     title.textContent = getLocalizedField(item, 'title');
-    subtitle.textContent = `${t('card_city')}: ${item.city} • ${t('card_date')}: ${item.date}`;
+    subtitle.textContent = `${t('card_city')}: ${localizeCityName(item.city)} • ${t('card_date')}: ${item.date}`;
     summary.textContent = getLocalizedField(item, 'summary');
 
     const paragraphs = getLocalizedField(item, 'description').split('\n\n').filter(Boolean);
@@ -221,7 +412,7 @@ function renderCitySummary() {
   const cities = Object.keys(counts).sort();
   wrap.innerHTML = cities.map((city) => `
     <article class="city-card">
-      <h3>${city}</h3>
+      <h3>${localizeCityName(city)}</h3>
       <p>${countLabel(counts[city])}</p>
     </article>
   `).join('');
@@ -251,7 +442,7 @@ function renderMainMap() {
     });
     marker.bindPopup(`
       <div class="popup-title">${getLocalizedField(item, 'title')}</div>
-      <div class="popup-meta">${item.city} • ${item.date} • ${typeLabel(item.type)}</div>
+      <div class="popup-meta">${localizeCityName(item.city)} • ${item.date} • ${typeLabel(item.type)}</div>
       <div>${getLocalizedField(item, 'summary')}</div>
       <div style="margin-top: 12px; border-top: 1px solid #ddd; padding-top: 8px;">
         <a href="#incidents" onclick="const card = document.querySelector('[data-incident-id=&quot;${item.id}&quot;]'); card?.scrollIntoView({ behavior: 'smooth', block: 'start' }); card?.querySelector('details')?.setAttribute('open', 'open'); return false;" style="color: #2f6f49; font-weight: 600; text-decoration: none; cursor: pointer;">

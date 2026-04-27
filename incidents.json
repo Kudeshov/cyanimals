@@ -247,5 +247,30 @@
     "images": [
       "incidents/achelia-2026-03-27-011/1.jpg"
     ]
+  },
+  {
+    "id": "limassol-2025-02-20-012",
+    "city": "Limassol",
+    "district": "Omonia",
+    "title": {
+      "ru": "Кошка Роз усыплена после выстрела из пневматического ружья",
+      "en": "Cat Roz euthanized after air gun shot",
+      "el": "Γάτα Ροζ ευθανασιάστηκε μετά από πυροβολισμό με αεροβόλο"
+    },
+    "date": "2025-02-20",
+    "lat": 34.66601640531176,
+    "lng": 33.00981219604578,
+    "approximate": true,
+    "type": "shooting",
+    "status": "dead",
+    "description": {
+      "ru": "В районе Омония в Лимассоле была застрелена из пневматического ружья местная кошка по кличке Роз. Пуля повредила спинной мозг, что привело к необратимым повреждениям. Кошку пришлось усыпить. Активисты требуют тщательного расследования и наказания виновного.",
+      "en": "In the Omonia district of Limassol, a local cat named Roz was shot with an air gun. The pellet damaged the spinal cord, causing irreparable harm. The cat had to be euthanized. Activists are calling for a thorough investigation and prosecution of the perpetrator.",
+      "el": "Στην περιοχή Ομόνοιας της Λεμεσού, μια τοπική γάτα με το όνομα Ροζ πυροβολήθηκε με αεροβόλο όπλο. Το σφαιρίδιο προκάλεσε ζημιά στον νωτιαίο μυελό, προκαλώντας μη αναστρέψιμη βλάβη. Η γάτα έπρεπε να ευθανασιαστεί. Οι ακτιβιστές ζητούν ενδελεχή έρευνα και τιμωρία του δράστη."
+    },
+    "images": [
+      "incidents/limassol-2025-02-20-012/1.jpg",
+      "incidents/limassol-2025-02-20-012/2.jpg"
+    ]
   }
 ]
