@@ -302,20 +302,21 @@
   {
     "id": "limassol-2025-12-15-001",
     "city": "Limassol",
+    "district": "Kofinou Refugee Camp",
     "title": {
       "ru": "Пес Перчик найден с двумя пулями",
       "en": "Dog Pepper found with two bullets",
       "el": "Ο σκύλος Πιπεράκι βρέθηκε με δύο σφαίρες"
     },
     "date": "2025-12-15",
-    "lat": 34.6782,
-    "lng": 33.0469,
+    "lat": 34.84298172961751,
+    "lng": 33.41564215055826,
     "type": "shooting",
     "status": "injured",
     "description": {
-      "ru": "В середине декабря волонтер нашел в Лимасоле пса по кличке Перчик. У него были проблемы со здоровьем, и в ветклинике сделали рентген, на котором обнаружили две пули. Сейчас пес находится на лечении.",
-      "en": "A volunteer found a dog named Pepper in Limassol around mid-December. He had health problems and an X-ray at the veterinary clinic revealed two bullets. The dog is now receiving treatment.",
-      "el": "Ένας εθελοντής βρήκε έναν σκύλο με το όνομα Πιπεράκι στη Λεμεσό περίπου στα μέσα Δεκεμβρίου. Είχε προβλήματα υγείας και σε ακτινογραφία στην κλινική αποκαλύφθηκαν δύο σφαίρες. Ο σκύλος τώρα λαμβάνει θεραπεία."
+      "ru": "В середине декабря волонтер нашел в районе Kofinou Refugee Camp пса по кличке Перчик. У него были проблемы со здоровьем, и в ветклинике сделали рентген, на котором обнаружили две пули. Сейчас пес находится на лечении.",
+      "en": "A volunteer found a dog named Pepper near the Kofinou Refugee Camp around mid-December. He had health problems and an X-ray at the veterinary clinic revealed two bullets. The dog is now receiving treatment.",
+      "el": "Ένας εθελοντής βρήκε έναν σκύλο με το όνομα Πιπεράκι κοντά στο καταυλισμό προσφύγων Kofinou περίπου στα μέσα Δεκεμβρίου. Είχε προβλήματα υγείας και σε ακτινογραφία στην κλινική αποκαλύφθηκαν δύο σφαίρες. Ο σκύλος τώρα λαμβάνει θεραπεία."
     },
     "images": [
       "incidents/limassol-2025-12-15-001/1.jpg",
