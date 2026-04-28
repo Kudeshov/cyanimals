@@ -298,5 +298,80 @@
       "incidents/ormideia-2026-03-20-009/1.jpg",
       "incidents/ormideia-2026-03-20-009/2.jpg"
     ]
+  },
+  {
+    "id": "limassol-2025-12-15-001",
+    "city": "Limassol",
+    "title": {
+      "ru": "Пес Перчик найден с двумя пулями",
+      "en": "Dog Pepper found with two bullets",
+      "el": "Ο σκύλος Πιπεράκι βρέθηκε με δύο σφαίρες"
+    },
+    "date": "2025-12-15",
+    "lat": 34.6782,
+    "lng": 33.0469,
+    "type": "shooting",
+    "status": "injured",
+    "description": {
+      "ru": "В середине декабря волонтер нашел в Лимасоле пса по кличке Перчик. У него были проблемы со здоровьем, и в ветклинике сделали рентген, на котором обнаружили две пули. Сейчас пес находится на лечении.",
+      "en": "A volunteer found a dog named Pepper in Limassol around mid-December. He had health problems and an X-ray at the veterinary clinic revealed two bullets. The dog is now receiving treatment.",
+      "el": "Ένας εθελοντής βρήκε έναν σκύλο με το όνομα Πιπεράκι στη Λεμεσό περίπου στα μέσα Δεκεμβρίου. Είχε προβλήματα υγείας και σε ακτινογραφία στην κλινική αποκαλύφθηκαν δύο σφαίρες. Ο σκύλος τώρα λαμβάνει θεραπεία."
+    },
+    "images": [
+      "incidents/limassol-2025-12-15-001/1.jpg",
+      "incidents/limassol-2025-12-15-001/2.jpg",
+      "incidents/limassol-2025-12-15-001/3.jpg",
+      "incidents/limassol-2025-12-15-001/4.jpg"
+    ]
+  },
+  {
+    "id": "nicosia-2026-04-22-001",
+    "city": "Nicosia",
+    "district": "πέρα χωριό-νήσου",
+    "title": {
+      "ru": "Собака Майли ранена в Пера Хорио Нису",
+      "en": "Dog Maili injured in Pera Chorio Nisou",
+      "el": "Ο σκύλος Μαΐλη τραυματίστηκε στο Πέρα Χωριό Νήσου"
+    },
+    "date": "2026-04-22",
+    "lat": 35.02001435433633,
+    "lng": 33.3914479282135,
+    "type": "shooting",
+    "status": "injured",
+    "description": {
+      "ru": "В Пера Хорио Нису собака по кличке Майли была ранена огнестрельным ранением. Ее доставили к ветеринару, где она проходит лечение.",
+      "en": "A dog named Maili was injured by a gunshot in Pera Chorio Nisou. She was taken to a veterinarian and is receiving treatment.",
+      "el": "Ένας σκύλος με το όνομα Μαΐλη τραυματίστηκε από τραύμα πυροβολισμού στο Πέρα Χωριό Νήσου. Μεταφέρθηκε σε κτηνίατρο όπου λαμβάνει θεραπεία."
+    },
+    "images": [
+      "incidents/nicosia-2026-04-22-001/1.jpg",
+      "incidents/nicosia-2026-04-22-001/2.jpg"
+    ]
+  },
+  {
+    "id": "nicosia-2026-04-10-002",
+    "city": "Nicosia",
+    "district": "πέρα χωριό-νήσου",
+    "title": {
+      "ru": "Пес Рокки ранен пулей в Пера Хорио Нису",
+      "en": "Dog Rocky injured by bullet in Pera Chorio Nisou",
+      "el": "Ο σκύλος Ρόκι τραυματίστηκε από σφαίρα στο Πέρα Χωριό Νήσου"
+    },
+    "date": "2026-04-10",
+    "lat": 35.01984908315697,
+    "lng": 33.39677769881434,
+    "type": "shooting",
+    "status": "injured",
+    "description": {
+      "ru": "В Пера Хорио Нису был ранен пулей пес Рокки. Его доставили к ветеринару, где он восстанавливается и планируется операция по удалению пули.",
+      "en": "A dog named Rocky was injured by a bullet in Pera Chorio Nisou. He was taken to a vet where he is recovering and surgery is planned to remove the bullet.",
+      "el": "Ένας σκύλος με το όνομα Ρόκι τραυματίστηκε από σφαίρα στο Πέρα Χωριό Νήσου. Μεταφέρθηκε σε κτηνίατρο όπου αναρρώνει και προγραμματίζεται χειρουργείο για την αφαίρεση της σφαίρας."
+    },
+    "images": [
+      "incidents/nicosia-2026-04-10-002/1.jpg",
+      "incidents/nicosia-2026-04-10-002/2.jpg",
+      "incidents/nicosia-2026-04-10-002/3.jpg",
+      "incidents/nicosia-2026-04-10-002/4.jpg"
+    ]
   }
 ]

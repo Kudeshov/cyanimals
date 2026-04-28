@@ -211,7 +211,8 @@ const translations = {
 const cityTranslations = {
   Limassol: { ru: 'Лимасол', en: 'Limassol', el: 'Λεμεσός' },
   Larnaca: { ru: 'Ларнака', en: 'Larnaca', el: 'Λάρνακα' },
-  Pafos: { ru: 'Пафос', en: 'Pafos', el: 'Πάφος' }
+  Pafos: { ru: 'Пафос', en: 'Pafos', el: 'Πάφος' },
+  Nicosia: { ru: 'Никосия', en: 'Nicosia', el: 'Λευκωσία' }
 };
 
 let currentLang = 'ru';
