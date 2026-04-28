@@ -1,53 +1,55 @@
-# Cyprus Cats — static site package
+# Кошки Кипра — статический сайт
 
-## What is included
-- `index.html` — single-page site
-- `incidents.json` — all incident cards are stored here
-- `assets/css/styles.css` — styles
-- `assets/js/app.js` — language switching, maps, rendering, form submit
-- `incidents/<incident-id>/` — optional folders for incident photos
-- `PROMPT_TEMPLATE.md` — prompt for adding a new card with AI help
+## Что это такое
+Это простой сайт для документирования случаев насилия над животными на Кипре. Сайт показывает инциденты на карте, позволяет фильтровать их и отправлять новые сообщения через форму.
 
-## Language behavior
-The site automatically selects language based on browser settings:
-- `ru*` -> Russian
-- `en*` -> English
-- `el*` -> Greek
-- fallback -> Russian
+## Что входит в пакет
+- `index.html` — главная страница сайта
+- `incidents.json` — все инциденты хранятся здесь в формате JSON
+- `assets/css/styles.css` — стили оформления
+- `assets/js/app.js` — код для переключения языка, карт, отображения и отправки формы
+- `incidents/<id-инцидента>/` — папки с фотографиями (опционально)
+- `PROMPT_TEMPLATE.md` — шаблон для добавления нового инцидента с помощью ИИ
 
-The visitor can switch language manually. The choice is saved in `localStorage`.
+## Как работает язык
+Сайт автоматически выбирает язык по настройкам браузера:
+- `ru*` → Русский
+- `en*` → Английский
+- `el*` → Греческий
+- Если не определено → Русский
 
-## How to connect Web3Forms
-1. Create a key in Web3Forms.
-2. Open `index.html`.
-3. Replace `YOUR_WEB3FORMS_ACCESS_KEY` with your real key.
-4. Upload the whole folder to hosting.
+Посетитель может вручную переключить язык. Выбор сохраняется в браузере.
 
-## How to add a new incident manually
-1. Copy an existing object in `incidents.json`.
-2. Change these fields:
-   - `id`
-   - `city`
-   - `district`
-   - `type` (`shooting`, `poisoning`, `other`)
-   - `status` (`reported`, `pending`, `confirmed`)
-   - `date`
-   - `lat`, `lng`
-   - `title.ru`, `title.en`, `title.el`
-   - `summary.ru`, `summary.en`, `summary.el`
-   - `description.ru`, `description.en`, `description.el`
-3. If there are photos, create a folder like:
-   - `incidents/new-incident-id/`
-4. Put image files there, for example:
-   - `incidents/new-incident-id/c1_1.jpg`
-   - `incidents/new-incident-id/c1_2.jpg`
-5. Add paths to the `images` array:
-   - `"images": ["incidents/new-incident-id/c1_1.jpg", "incidents/new-incident-id/c1_2.jpg"]`
+## Как подключить Web3Forms для формы
+1. Зарегистрируйтесь на Web3Forms и получите ключ доступа.
+2. Откройте файл `index.html`.
+3. Замените `YOUR_WEB3FORMS_ACCESS_KEY` на ваш настоящий ключ.
+4. Загрузите всю папку на хостинг.
 
-## Personal data rule
-Do not publish:
-- full private addresses
-- phone numbers
+## Как добавить новый инцидент вручную
+1. Откройте файл `incidents.json`.
+2. Скопируйте один из существующих объектов (инцидентов).
+3. Измените следующие поля:
+   - `id` — уникальный идентификатор, например `nicosia-2026-04-28-001`
+   - `city` — город, например `Nicosia`
+   - `district` — район (опционально)
+   - `type` — тип: `shooting` (стрельба), `poisoning` (отравление), `other` (другое)
+   - `status` — статус: `reported` (сообщено), `pending` (ожидает), `confirmed` (подтверждено), `injured` (ранено), `dead` (погибло)
+   - `date` — дата в формате `YYYY-MM-DD`
+   - `lat`, `lng` — координаты (широта и долгота)
+   - `title.ru`, `title.en`, `title.el` — заголовки на трех языках
+   - `description.ru`, `description.en`, `description.el` — описания на трех языках
+4. Если есть фотографии:
+   - Создайте папку `incidents/ваш-id-инцидента/`
+   - Положите туда фото, например `1.jpg`, `2.jpg`
+   - Добавьте пути в массив `images`: `["incidents/ваш-id-инцидента/1.jpg", "incidents/ваш-id-инцидента/2.jpg"]`
+5. Сохраните файл и обновите сайт.
+
+## Правило о личных данных
+Не публикуйте:
+- Полные домашние адреса
+- Номера телефонов
+- Имена частных лиц (без их согласия)
 - names of private individuals unless you have permission and legal grounds
 
 Use approximate map coordinates when needed.
