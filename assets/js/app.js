@@ -383,7 +383,14 @@ function renderIncidents() {
     description.innerHTML = paragraphs.map((p) => `<p>${p}</p>`).join('') + `<p><em>${t('card_map_note')}</em></p>`;
 
     if (Array.isArray(item.images) && item.images.length) {
-      gallery.innerHTML = item.images.map((img) => `<a href="${img}" target="_blank" rel="noopener"><img src="${img}" alt="${getLocalizedField(item, 'title')}" loading="lazy"></a>`).join('');
+      gallery.innerHTML = item.images.map((img) => {
+        const ext = img.split('.').pop().toLowerCase();
+        if (['mp4', 'avi', 'mov', 'webm', 'm4v'].includes(ext)) {
+          return `<video src="${img}" controls preload="metadata" style="max-width: 100%; height: auto;"></video>`;
+        } else {
+          return `<a href="${img}" target="_blank" rel="noopener"><img src="${img}" alt="${getLocalizedField(item, 'title')}" loading="lazy"></a>`;
+        }
+      }).join('');
     } else {
       gallery.innerHTML = `<p>${t('no_photos')}</p>`;
     }
