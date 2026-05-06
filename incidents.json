@@ -1,5 +1,29 @@
 [
   {
+    "id": "nicosia-2026-05-05-001",
+    "city": "Nicosia",
+    "title": {
+      "ru": "Кошка с тремя пеллетами от пневматики в голове",
+      "en": "Cat found with three airgun pellets in her head",
+      "el": "Γάτα με τρία σφαιρίδια από αεροβόλο στο κεφάλι"
+    },
+    "date": "2026-05-05",
+    "lat": 35.11778304437489,
+    "lng": 33.311411836072416,
+    "type": "shooting",
+    "status": "injured",
+    "description": {
+      "ru": "В районе Lakatamia, Nicosia, кошка была доставлена к ветеринару после ранения. Обследование показало, что в голове животного находятся три пеллета от пневматического оружия. Кошка ранена. По факту происшествия подано заявление в Полицию по защите животных.",
+      "en": "In the Lakatamia area of Nicosia, a cat was taken to a veterinarian after being injured. Examination showed that the animal had three airgun pellets in her head. The cat is injured. A report has been filed with the Animal Police regarding the incident.",
+      "el": "Στην περιοχή Λακατάμειας στη Λευκωσία, μια γάτα μεταφέρθηκε σε κτηνίατρο μετά από τραυματισμό. Η εξέταση έδειξε ότι το ζώο είχε τρία σφαιρίδια από αεροβόλο στο κεφάλι. Η γάτα είναι τραυματισμένη. Για το περιστατικό έχει υποβληθεί καταγγελία στην Αστυνομία Ζώων."
+    },
+    "images": [
+      "incidents/nicosia-2026-05-05-001/1.jpg",
+      "incidents/nicosia-2026-05-05-001/2.jpg",
+      "incidents/nicosia-2026-05-05-001/3.jpg"
+    ]
+  },
+  {
     "id": "limassol-2026-04-09-001",
     "city": "Limassol",
     "title": {
