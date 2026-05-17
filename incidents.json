@@ -1,5 +1,33 @@
 [
   {
+    "id": "pafos-2026-05-08-001",
+    "city": "Pafos",
+    "district": "Mesa Chorio",
+    "title": {
+      "ru": "У кота нашли дробинки в теле в Меса Хорио",
+      "en": "Cat found with pellets in his body in Mesa Chorio",
+      "el": "Γάτα βρέθηκε με σκάγια στο σώμα της στη Μέσα Χωριό"
+    },
+    "date": "2026-05-08",
+    "lat": 34.80790109883296,
+    "lng": 32.462663082992705,
+    "type": "shooting",
+    "status": "injured",
+    "description": {
+      "ru": "8 мая в Меса Хорио кот вернулся домой хромая. Хозяйка отвезла его в ветклинику, где рентген показал несколько дробинок в теле. Коту оказали помощь, он вернулся домой и продолжает лечение.",
+      "en": "On May 8 in Mesa Chorio, a cat returned home limping. The owner took him to a vet clinic, where X-rays revealed several pellets in his body. He received treatment and has returned home to continue recovery.",
+      "el": "Στις 8 Μαΐου στη Μέσα Χωριό μια γάτα επέστρεψε σπίτι κουτσαίνοντας. Η ιδιοκτήτρια τη μετέφερε σε κτηνιατρική κλινική, όπου οι ακτινογραφίες έδειξαν αρκετά σκάγια στο σώμα της. Η γάτα έλαβε φροντίδα και επέστρεψε σπίτι για να συνεχίσει τη θεραπεία."
+    },
+    "images": [
+      "incidents/pafos-2026-05-08-001/1.jpg",
+      "incidents/pafos-2026-05-08-001/2.jpg",
+      "incidents/pafos-2026-05-08-001/3.jpg",
+      "incidents/pafos-2026-05-08-001/4.jpg",
+      "incidents/pafos-2026-05-08-001/5.jpg",
+      "incidents/pafos-2026-05-08-001/6.jpg"
+    ]
+  },
+  {
     "id": "larnaca-2026-05-12-001",
     "city": "Larnaca",
     "district": "Livadia",
