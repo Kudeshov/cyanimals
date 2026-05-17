@@ -1,5 +1,32 @@
 [
   {
+    "id": "larnaca-2026-05-12-001",
+    "city": "Larnaca",
+    "district": "Livadia",
+    "title": {
+      "ru": "Котята ранены из пневматики в Ливадии",
+      "en": "Kittens shot with an air gun in Livadia",
+      "el": "Γατάκια πυροβολημένα με αεροβόλο στη Λιβάδια"
+    },
+    "date": "2026-05-12",
+    "lat": 34.948516250404,
+    "lng": 33.62659391483382,
+    "type": "shooting",
+    "status": "injured",
+    "description": {
+      "ru": "В районе Ливадии Ларнаки полиция Ороклини начала расследование после заявления местной жительницы о нескольких котятах, которые хромают из-за раненой лапы. Она рассказала, что котята родились несколько месяцев назад и их подкармливали соседи.",
+      "en": "In the Livadia area of Larnaca, Oroklini Police opened an investigation after a local resident reported several kittens limping with an injured leg. The resident said the kittens are a few months old and had been fed by neighbors.",
+      "el": "Στην περιοχή Λιβάδια της Λάρνακας, η Αστυνομία Ορόκληνης άνοιξε έρευνα μετά από καταγγελία κατοίκου για αρκετά γατάκια που κουτσαίνουν με τραυματισμένο πόδι. Ο κάτοικος είπε ότι τα γατάκια είναι λίγων μηνών και τα τάιζαν οι γείτονες."
+    },
+    "images": [
+      "incidents/larnaca-2026-05-12-001/1.jpg",
+      "incidents/larnaca-2026-05-12-001/2.jpg",
+      "incidents/larnaca-2026-05-12-001/3.jpg",
+      "incidents/larnaca-2026-05-12-001/4.jpg",
+      "incidents/larnaca-2026-05-12-001/5.jpg"
+    ]
+  },
+  {
     "id": "nicosia-2026-05-05-001",
     "city": "Nicosia",
     "title": {
