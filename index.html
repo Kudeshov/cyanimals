@@ -12,7 +12,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title data-i18n="site_title">Animals of Cyprus — Incident Map and Reports</title>
-  <meta name="description" content="Documenting violence against animals in Cyprus, collecting reports, and supporting public attention to incidents." />
+  <meta name="description" content="Information, support and animal protection in Cyprus, with reports, public updates and an incident map." />
   <meta property="og:title" content="Cyprus Animal Abuse Incidents" />
   <meta property="og:description" content="A public map and archive documenting animal cruelty incidents in Cyprus." />
   <meta property="og:image" content="https://cyanimals.com/assets/og-preview.jpg" />
@@ -38,6 +38,7 @@
 
       <nav class="main-nav">
         <a href="#about" data-i18n="nav_about">About</a>
+        <a href="#news" data-i18n="nav_news">News</a>
         <a href="#map-section" data-i18n="nav_map">Map</a>
         <a href="#incidents" data-i18n="nav_incidents">Incidents</a>
         <a href="#cities" data-i18n="nav_cities">Cities</a>
@@ -52,48 +53,43 @@
     </div>
   </header>
 
-  <div class="top-banner">
-    <div class="container banner-content">
-      <p class="banner-slogan" data-i18n="banner_slogan">The rally has concluded</p>
-      <p data-i18n="banner_line1">On May 3 at 18:00 in Limassol, a public protest took place in support of animals injured and shot across Cyprus.</p>
-      <p data-i18n="banner_line2">Thank you to everyone who came, spoke out, and helped raise awareness for animal protection.</p>
-      <p data-i18n="banner_action">We remain committed to documenting incidents, supporting investigations, and preventing further cruelty.</p>
-    </div>
-  </div>
-
   <main id="top">
     <section class="hero">
       <div class="container hero-grid">
         <div>
           <p class="eyebrow" data-i18n="hero_eyebrow">Public attention and documentation</p>
-          <h1 data-i18n="hero_title">Documenting violence against animals in Cyprus</h1>
+          <h1 data-i18n="hero_title">Information, support and animal protection in Cyprus</h1>
           <p class="hero-text" data-i18n="hero_text">
-            This site collects verified and reported incidents, shows where they happened, and helps people submit new information.
+            The site is maintained by the Ecological Cyprus team, which collects, verifies and organizes information about animal welfare issues in Cyprus. The team documents incoming incident reports, helps share important information and supports cooperation between volunteers, organizations and the public.
           </p>
           <div class="hero-actions">
             <a href="#incidents" class="btn btn-primary" data-i18n="hero_btn_incidents">View incidents</a>
             <a href="#report" class="btn btn-secondary" data-i18n="hero_btn_report">Send information</a>
           </div>
         </div>
-        <aside class="hero-panel">
-          <div class="contact-card">
-            <h2 data-i18n="hero_panel_contact">Project Lead</h2>
-            <div class="contact-info">
-              <p class="contact-name" data-i18n="contact_name">Olga Korobintseva</p>
-              <p class="contact-label" data-i18n="contact_email_label">E-mail:</p>
-              <p class="contact-value"><a href="mailto:korobintseva.olga@gmail.com">korobintseva.olga@gmail.com</a></p>
-            </div>
+      </div>
+    </section>
+
+    <section id="news" class="section news-section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2 data-i18n="news_title">News</h2>
+            <p data-i18n="news_text">Latest project updates and public events.</p>
           </div>
-        </aside>
+        </div>
+        <div id="newsList" class="news-list" aria-live="polite"></div>
       </div>
     </section>
 
     <section id="about" class="section">
       <div class="container narrow">
         <h2 data-i18n="about_title">About the project</h2>
-        <p data-i18n="about_p1">
-          The project is dedicated to documenting incidents involving shootings, poisoning and other violence against cats in Cyprus.
-        </p>
+        <div class="about-text" data-i18n="about_p1" data-i18n-format="paragraphs">
+          <p>Ecological Cyprus is a community committed to protecting and improving the welfare of animals across Cyprus.</p>
+          <p>Through documentation, research, data collection, and public awareness, we work to highlight animal welfare issues, support volunteers and caregivers, and promote practical solutions for the protection of animals.</p>
+          <p>Our project brings together information on animal welfare, community initiatives, rescue efforts, and documented cases of cruelty. By collecting reliable data and sharing evidence-based information, we aim to support better policies, stronger protection measures, and more effective cooperation between volunteers, organisations, local authorities, and the public.</p>
+        </div>
       </div>
     </section>
 
@@ -155,7 +151,7 @@
         <div>
           <h2 data-i18n="report_title">Send information</h2>
           <p data-i18n="report_text">
-            Use the form to send information about a new incident, to clarify an existing case, or to contact the project team.
+            Use the form to send information about a new incident, to clarify an existing case, or to contact the project team. You can also send information via WhatsApp to 97946307.
           </p>
           <div class="note-box">
             <strong data-i18n="report_note_title">Privacy note:</strong>
@@ -230,6 +226,20 @@
       <p data-i18n="footer_hint">Static site with JSON-based incident cards and Leaflet maps.</p>
     </div>
   </footer>
+
+  <template id="newsCardTemplate">
+    <article class="news-card">
+      <p class="news-date"></p>
+      <h3 class="news-title"></h3>
+      <p class="news-summary"></p>
+      <details class="news-details">
+        <summary data-i18n="news_open">Read more</summary>
+        <div class="news-details-text"></div>
+      </details>
+      <div class="news-links"></div>
+      <div class="news-gallery"></div>
+    </article>
+  </template>
 
   <template id="incidentCardTemplate">
     <article class="incident-card">

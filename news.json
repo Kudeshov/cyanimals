@@ -1,0 +1,35 @@
+[
+  {
+    "id": "cat-monastery-clean-up-2026-06-06",
+    "date": "2026-06-06",
+    "publishedAt": "2026-06-03",
+    "title": {
+      "ru": "День волонтёрской уборки в Кошачьем монастыре 6 июня",
+      "en": "Volunteer clean-up day at the Cat Monastery on June 6",
+      "el": "Ημέρα εθελοντικού καθαρισμού στο Μοναστήρι των Γατών στις 6 Ιουνίου"
+    },
+    "summary": {
+      "ru": "Приглашаем присоединиться к волонтёрской уборке 06.06.2026 в 8:30-9:00 в Monastery of St Nicholas of the Cats.",
+      "en": "We invite you to join a special volunteer clean-up day on 06.06.2026 at 8:30-9:00 AM at Monastery of St Nicholas of the Cats.",
+      "el": "Σας προσκαλούμε σε ειδική ημέρα εθελοντικού καθαρισμού στις 06.06.2026, 8:30-9:00 π.μ., στο Monastery of St Nicholas of the Cats."
+    },
+    "body": {
+      "ru": "Volunteer clean-up day at the Cat Monastery on June 6.\n\nПриглашаем вас присоединиться к специальному волонтёрскому дню уборки 06.06.2026 в 8:30-9:00 в Monastery of St Nicholas of the Cats. Подробности опубликованы на Facebook.",
+      "en": "Volunteer clean-up day at the Cat Monastery on June 6.\n\nWe invite you to join a special volunteer clean-up day on 06.06.2026 at 8:30-9:00 AM at Monastery of St Nicholas of the Cats. Details are on Facebook.",
+      "el": "Ημέρα εθελοντικού καθαρισμού στο Μοναστήρι των Γατών στις 6 Ιουνίου.\n\nΣας προσκαλούμε να συμμετάσχετε σε ειδική ημέρα εθελοντικού καθαρισμού στις 06.06.2026, 8:30-9:00 π.μ., στο Monastery of St Nicholas of the Cats. Οι λεπτομέρειες είναι στο Facebook."
+    },
+    "links": [
+      {
+        "url": "https://www.facebook.com/events/27250956911165638",
+        "label": {
+          "ru": "Подробности на Facebook",
+          "en": "Details on Facebook",
+          "el": "Λεπτομέρειες στο Facebook"
+        }
+      }
+    ],
+    "images": [
+      "news/cat-monastery-clean-up-2026-06-06/1.jpg"
+    ]
+  }
+]

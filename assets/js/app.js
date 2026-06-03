@@ -3,26 +3,23 @@ const translations = {
     site_title: 'Животные Кипра - карта и карточки инцидентов',
     brand_name: 'Животные Кипра',
     nav_about: 'О проекте',
+    nav_news: 'Новости',
     nav_map: 'Карта',
     nav_incidents: 'Инциденты',
     nav_cities: 'Города',
     nav_report: 'Сообщить',
     hero_eyebrow: 'Публичное внимание и документирование',
-    hero_title: 'Документирование насилия против животных на Кипре',
-    hero_text: 'Сайт собирает подтвержденные и поступившие сообщения об инцидентах, показывает их на карте и помогает передавать новую информацию.',
+    hero_title: 'Информация, поддержка и защита животных на Кипре',
+    hero_text: 'Сайт поддерживается командой Ecological Cyprus, которая собирает, проверяет и систематизирует информацию о проблемах животных на Кипре. Команда документирует поступающие сообщения об инцидентах, помогает распространять важную информацию и способствует взаимодействию между волонтёрами, организациями и общественностью.',
     hero_btn_incidents: 'Смотреть инциденты',
     hero_btn_report: 'Передать информацию',
-    hero_panel_contact: 'Проект принадлежит:',
-    contact_name: 'Ольга Коробинцева',
-    contact_phone_label: 'Телефон:',
-    contact_email_label: 'E-mail:',
-    banner_slogan: 'Митинг завершён',
-    banner_line1: '3 мая в 18:00 в Лимасоле состоялся публичный митинг в поддержку животных, раненых и пострадавших от выстрелов.',
-    banner_line2: 'Спасибо всем, кто пришёл, выступил и помог привлечь внимание к защите животных.',
-    banner_action: 'Мы продолжим документировать инциденты, поддерживать расследования и бороться с жестокостью.',
-    banner_organizer: 'Организатор: Movement of Ecologists – Citizens\' Cooperation',
     about_title: 'О проекте',
-    about_p1: 'На территории Республики Кипр регулярно совершаются акты насилия в отношении животных. Указанные акты носят системный характер и не являются единичными случаями. Фиксируются случаи причинения животным боли, тяжких страданий и смерти. Собранные материалы (сообщения, фото-, видео- и документальные доказательства) используются для информирования общества и органов власти с целью привлечения виновных к ответственности. Насилие должно быть прекращено.',
+    about_p1: 'Ecological Cyprus — это сообщество, которое проводит исследования, осуществляет сбор данных и информирование общественности для привлечения внимания к проблемам животных на Кипре и поддерживает волонтёров.\n\nСобирая достоверные данные и распространяя проверенную информацию, мы стремимся к установлению эффективного взаимодействия между волонтёрами, организациями, местными властями и обществом.',
+    news_title: 'Новости',
+    news_text: 'Последние новости проекта и публичные события.',
+    news_open: 'Читать полностью',
+    news_empty: 'Новости скоро появятся.',
+    news_link_label: 'Открыть ссылку',
     map_title: 'Карта инцидентов',
     map_text: 'Маркеры показывают примерные места инцидентов, которые сейчас добавлены на сайт.',
     legend_shooting: 'Стрельба',
@@ -35,7 +32,7 @@ const translations = {
     filter_all: 'Все',
     cities_title: 'Города Кипра',
     report_title: 'Передать информацию',
-    report_text: 'Используйте форму, чтобы сообщить о новом инциденте, уточнить уже известный случай или связаться с командой проекта.',
+    report_text: 'Используйте форму, чтобы сообщить о новом инциденте, уточнить уже известный случай или связаться с командой проекта. Также вы можете отправить информацию на WhatsApp по номеру 97946307.',
     report_note_title: 'Примечание о конфиденциальности:',
     report_note_text: 'Не указывайте личные адреса, телефоны и имена частных лиц, если у вас нет четкого законного основания и согласия на публикацию.',
     form_type: 'Тип сообщения',
@@ -77,26 +74,23 @@ const translations = {
     site_title: 'Animals of Cyprus - incident map and cards',
     brand_name: 'Animals of Cyprus',
     nav_about: 'About',
+    nav_news: 'News',
     nav_map: 'Map',
     nav_incidents: 'Incidents',
     nav_cities: 'Cities',
     nav_report: 'Report',
     hero_eyebrow: 'Public attention and documentation',
-    hero_title: 'Documenting violence against animals in Cyprus',
-    hero_text: 'This site collects verified and reported incidents, shows where they happened, and helps people submit new information.',
+    hero_title: 'Information, support and animal protection in Cyprus',
+    hero_text: 'The site is maintained by the Ecological Cyprus team, which collects, verifies and organizes information about animal welfare issues in Cyprus. The team documents incoming incident reports, helps share important information and supports cooperation between volunteers, organizations and the public.',
     hero_btn_incidents: 'View incidents',
     hero_btn_report: 'Send information',
-    hero_panel_contact: 'Project owner:',
-    contact_name: 'Olga Korobintseva',
-    contact_phone_label: 'Phone:',
-    contact_email_label: 'E-mail:',
-    banner_slogan: 'The rally has concluded',
-    banner_line1: 'On May 3 at 18:00 in Limassol, a public protest took place in support of animals injured and shot across Cyprus.',
-    banner_line2: 'Thank you to everyone who came, spoke out, and helped raise awareness for animal protection.',
-    banner_action: 'We remain committed to documenting incidents, supporting investigations, and preventing further cruelty.',
-    banner_organizer: 'Organizer: Movement of Ecologists – Citizens\' Cooperation',
     about_title: 'About the project',
-    about_p1: 'Acts of violence against animals are regularly committed in the Republic of Cyprus. These acts are systemic in nature and are not isolated incidents. Cases are documented in which animals are subjected to pain, severe suffering, and death. Collected materials, including reports, photo, video, and documentary evidence, are used to inform the public and the authorities in order to hold those responsible accountable. The violence must be stopped.',
+    about_p1: 'Ecological Cyprus is a community committed to protecting and improving the welfare of animals across Cyprus.\n\nThrough documentation, research, data collection, and public awareness, we work to highlight animal welfare issues, support volunteers and caregivers, and promote practical solutions for the protection of animals.\n\nOur project brings together information on animal welfare, community initiatives, rescue efforts, and documented cases of cruelty. By collecting reliable data and sharing evidence-based information, we aim to support better policies, stronger protection measures, and more effective cooperation between volunteers, organisations, local authorities, and the public.',
+    news_title: 'News',
+    news_text: 'Latest project updates and public events.',
+    news_open: 'Read more',
+    news_empty: 'News will appear here soon.',
+    news_link_label: 'Open link',
     map_title: 'Incident map',
     map_text: 'Markers show the approximate locations of incidents currently included on the site.',
     legend_shooting: 'Shooting',
@@ -109,7 +103,7 @@ const translations = {
     filter_all: 'All',
     cities_title: 'Cities of Cyprus',
     report_title: 'Send information',
-    report_text: 'Use the form to send information about a new incident, to clarify an existing case, or to contact the project team.',
+    report_text: 'Use the form to send information about a new incident, to clarify an existing case, or to contact the project team. You can also send information via WhatsApp to 97946307.',
     report_note_title: 'Privacy note:',
     report_note_text: 'Do not include personal addresses, phone numbers or names of private individuals unless you have a clear legal basis and consent to share them.',
     form_type: 'Message type',
@@ -151,26 +145,23 @@ const translations = {
     site_title: 'Ζώα της Κύπρου - χάρτης και κάρτες περιστατικών',
     brand_name: 'Ζώα της Κύπρου',
     nav_about: 'Σχετικά',
+    nav_news: 'Νέα',
     nav_map: 'Χάρτης',
     nav_incidents: 'Περιστατικά',
     nav_cities: 'Πόλεις',
     nav_report: 'Αναφορά',
     hero_eyebrow: 'Δημόσια προσοχή και τεκμηρίωση',
-    hero_title: 'Τεκμηρίωση βίας κατά ζώων στην Κύπρο',
-    hero_text: 'Ο ιστότοπος συγκεντρώνει επιβεβαιωμένα και αναφερόμενα περιστατικά, τα δείχνει στον χάρτη και βοηθά στην αποστολή νέων πληροφοριών.',
+    hero_title: 'Ενημέρωση, υποστήριξη και προστασία των ζώων στην Κύπρο',
+    hero_text: 'Ο ιστότοπος υποστηρίζεται από την ομάδα Ecological Cyprus, η οποία συλλέγει, επαληθεύει και οργανώνει πληροφορίες για τα ζητήματα των ζώων στην Κύπρο. Η ομάδα τεκμηριώνει τις αναφορές περιστατικών που λαμβάνει, βοηθά στη διάδοση σημαντικών πληροφοριών και ενισχύει τη συνεργασία μεταξύ εθελοντών, οργανώσεων και της κοινωνίας.',
     hero_btn_incidents: 'Δείτε περιστατικά',
     hero_btn_report: 'Στείλτε πληροφορίες',
-    hero_panel_contact: 'Υπεύθυνη έργου:',
-    contact_name: 'Όλγα Κορομπίντσεβα',
-    contact_phone_label: 'Τηλέφωνο:',
-    contact_email_label: 'E-mail:',
-    banner_slogan: 'Η συγκέντρωση ολοκληρώθηκε',
-    banner_line1: 'Στις 3 Μαΐου, στις 18:00 στη Λεμεσό, πραγματοποιήθηκε δημόσια διαμαρτυρία υπέρ των ζώων που τραυματίστηκαν και πυροβολήθηκαν στην Κύπρο.',
-    banner_line2: 'Ευχαριστούμε όλους όσοι ήρθαν, μίλησαν και βοήθησαν να προσελκύσουμε προσοχή στην προστασία των ζώων.',
-    banner_action: 'Παραμένουμε προσηλωμένοι στην τεκμηρίωση περιστατικών, στην υποστήριξη των ερευνών και στην αποτροπή περαιτέρω βίας.',
-    banner_organizer: 'Οργανωτής: Κίνημα Οικολόγων - Συνεργασία Πολιτών',
     about_title: 'Σχετικά με το έργο',
-    about_p1: 'Στην Κυπριακή Δημοκρατία διαπράττονται τακτικά πράξεις βίας κατά των ζώων. Οι πράξεις αυτές έχουν συστημικό χαρακτήρα και δεν αποτελούν μεμονωμένα περιστατικά. Καταγράφονται περιπτώσεις πρόκλησης πόνου, βαριάς οδύνης και θανάτου στα ζώα. Το συγκεντρωμένο υλικό, συμπεριλαμβανομένων αναφορών, φωτογραφιών, βίντεο και τεκμηριωτικών αποδείξεων, χρησιμοποιείται για την ενημέρωση της κοινωνίας και των αρχών με στόχο την απόδοση ευθυνών στους υπαίτιους. Η βία πρέπει να σταματήσει.',
+    about_p1: 'Το Ecological Cyprus είναι μια κοινότητα αφοσιωμένη στην προστασία και τη βελτίωση της ευημερίας των ζώων σε όλη την Κύπρο.\n\nΜέσα από την τεκμηρίωση, την έρευνα, τη συλλογή δεδομένων και την ενημέρωση του κοινού, εργαζόμαστε για να αναδεικνύουμε ζητήματα ευημερίας των ζώων, να στηρίζουμε εθελοντές και φροντιστές και να προωθούμε πρακτικές λύσεις για την προστασία των ζώων.\n\nΤο έργο μας συγκεντρώνει πληροφορίες για την ευημερία των ζώων, κοινοτικές πρωτοβουλίες, προσπάθειες διάσωσης και τεκμηριωμένες περιπτώσεις κακοποίησης. Συλλέγοντας αξιόπιστα δεδομένα και κοινοποιώντας τεκμηριωμένη πληροφόρηση, επιδιώκουμε να στηρίξουμε καλύτερες πολιτικές, ισχυρότερα μέτρα προστασίας και πιο αποτελεσματική συνεργασία μεταξύ εθελοντών, οργανώσεων, τοπικών αρχών και του κοινού.',
+    news_title: 'Νέα',
+    news_text: 'Οι τελευταίες ενημερώσεις του έργου και δημόσιες εκδηλώσεις.',
+    news_open: 'Διαβάστε περισσότερα',
+    news_empty: 'Τα νέα θα εμφανιστούν εδώ σύντομα.',
+    news_link_label: 'Άνοιγμα συνδέσμου',
     map_title: 'Χάρτης περιστατικών',
     map_text: 'Οι δείκτες δείχνουν τις κατά προσέγγιση τοποθεσίες των περιστατικών που έχουν προστεθεί στον ιστότοπο.',
     legend_shooting: 'Πυροβολισμός',
@@ -183,7 +174,7 @@ const translations = {
     filter_all: 'Όλα',
     cities_title: 'Πόλεις της Κύπρου',
     report_title: 'Στείλτε πληροφορίες',
-    report_text: 'Χρησιμοποιήστε τη φόρμα για νέο περιστατικό, για διευκρίνιση υπάρχουσας υπόθεσης ή για επικοινωνία με την ομάδα του έργου.',
+    report_text: 'Χρησιμοποιήστε τη φόρμα για νέο περιστατικό, για διευκρίνιση υπάρχουσας υπόθεσης ή για επικοινωνία με την ομάδα του έργου. Μπορείτε επίσης να στείλετε πληροφορίες στο WhatsApp στον αριθμό 97946307.',
     report_note_title: 'Σημείωση ιδιωτικότητας:',
     report_note_text: 'Μην συμπεριλαμβάνετε προσωπικές διευθύνσεις, τηλέφωνα ή ονόματα ιδιωτών, εκτός αν έχετε σαφή νομική βάση και συγκατάθεση για κοινοποίηση.',
     form_type: 'Τύπος μηνύματος',
@@ -232,9 +223,11 @@ const cityTranslations = {
 
 let currentLang = 'ru';
 let incidents = [];
+let newsItems = [];
 let mainMap;
 let mainMarkersLayer;
 const detailMaps = [];
+const NEWS_VISIBLE_LIMIT = 3;
 
 function detectLanguage() {
   const saved = localStorage.getItem('catsSiteLang');
@@ -261,13 +254,27 @@ function setLanguage(lang) {
   document.title = t('site_title');
   document.querySelectorAll('[data-i18n]').forEach((el) => {
     const key = el.dataset.i18n;
-    el.textContent = t(key);
+    if (el.dataset.i18nFormat === 'paragraphs') {
+      renderI18nParagraphs(el, t(key));
+    } else {
+      el.textContent = t(key);
+    }
   });
   document.querySelectorAll('.lang-btn').forEach((btn) => btn.classList.toggle('active', btn.dataset.lang === lang));
+  renderNews();
   populateCityFilter();
   renderIncidents();
   renderCitySummary();
   renderMainMap();
+}
+
+function renderI18nParagraphs(el, text) {
+  el.innerHTML = '';
+  text.split(/\n\n+/).map((paragraph) => paragraph.trim()).filter(Boolean).forEach((paragraph) => {
+    const p = document.createElement('p');
+    p.textContent = paragraph;
+    el.appendChild(p);
+  });
 }
 
 function pluralizeRu(count, one, few, many) {
@@ -302,6 +309,140 @@ function statusLabel(status) {
 
 function badgeClass(prefix, value) {
   return `badge-${value || prefix}`;
+}
+
+function dateLocale() {
+  if (currentLang === 'ru') return 'ru-RU';
+  if (currentLang === 'el') return 'el-CY';
+  return 'en-GB';
+}
+
+function parseDate(value) {
+  if (!value) return null;
+  const normalized = /^\d{4}-\d{2}-\d{2}$/.test(value) ? `${value}T00:00:00` : value;
+  const date = new Date(normalized);
+  return Number.isNaN(date.getTime()) ? null : date;
+}
+
+function dateSortValue(value) {
+  return parseDate(value)?.getTime() || 0;
+}
+
+function formatNewsDate(value) {
+  const date = parseDate(value);
+  if (!date) return value || '';
+  return new Intl.DateTimeFormat(dateLocale(), {
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric'
+  }).format(date);
+}
+
+async function loadNews() {
+  try {
+    const res = await fetch('news.json');
+    if (!res.ok) throw new Error(`Could not load news.json: ${res.status}`);
+    const data = await res.json();
+    newsItems = Array.isArray(data) ? data : [];
+  } catch (err) {
+    newsItems = [];
+    console.warn('Could not load news.json', err);
+  }
+  renderNews();
+}
+
+function renderNews() {
+  const list = document.getElementById('newsList');
+  const tpl = document.getElementById('newsCardTemplate');
+  if (!list || !tpl) return;
+
+  list.innerHTML = '';
+  const visibleNews = [...newsItems]
+    .sort((a, b) => dateSortValue(b.publishedAt || b.date) - dateSortValue(a.publishedAt || a.date))
+    .slice(0, NEWS_VISIBLE_LIMIT);
+
+  if (!visibleNews.length) {
+    const empty = document.createElement('p');
+    empty.className = 'news-empty';
+    empty.textContent = t('news_empty');
+    list.appendChild(empty);
+    return;
+  }
+
+  visibleNews.forEach((item) => {
+    const node = tpl.content.cloneNode(true);
+    const card = node.querySelector('.news-card');
+    const date = node.querySelector('.news-date');
+    const title = node.querySelector('.news-title');
+    const summary = node.querySelector('.news-summary');
+    const details = node.querySelector('.news-details');
+    const detailsText = node.querySelector('.news-details-text');
+    const detailsSummary = details?.querySelector('summary');
+    const gallery = node.querySelector('.news-gallery');
+    const links = node.querySelector('.news-links');
+
+    if (item.id) card.dataset.newsId = item.id;
+    date.textContent = formatNewsDate(item.date || item.publishedAt);
+    title.textContent = getLocalizedField(item, 'title');
+    const summaryText = getLocalizedField(item, 'summary');
+    const bodyText = getLocalizedField(item, 'body') || getLocalizedField(item, 'description');
+    summary.textContent = summaryText;
+
+    if (detailsSummary) detailsSummary.textContent = t('news_open');
+    if (bodyText.trim() && bodyText.trim() !== summaryText.trim()) {
+      bodyText.split('\n\n').map((p) => p.trim()).filter(Boolean).forEach((paragraph) => {
+        const p = document.createElement('p');
+        p.textContent = paragraph;
+        detailsText.appendChild(p);
+      });
+    } else {
+      details.remove();
+    }
+
+    renderNewsGallery(item, gallery);
+    renderNewsLinks(item, links);
+    list.appendChild(node);
+  });
+}
+
+function renderNewsGallery(item, gallery) {
+  const images = Array.isArray(item.images) ? item.images : [];
+  images.forEach((image) => {
+    const src = typeof image === 'string' ? image : image?.src;
+    if (!src) return;
+
+    const link = document.createElement('a');
+    link.href = src;
+    link.target = '_blank';
+    link.rel = 'noopener';
+
+    const img = document.createElement('img');
+    img.src = src;
+    img.loading = 'lazy';
+    img.alt = typeof image === 'string' ? getLocalizedField(item, 'title') : getLocalizedField(image, 'alt') || getLocalizedField(item, 'title');
+    img.addEventListener('error', () => link.remove(), { once: true });
+
+    link.appendChild(img);
+    gallery.appendChild(link);
+  });
+}
+
+function renderNewsLinks(item, linksWrap) {
+  const links = Array.isArray(item.links) ? item.links : [];
+  const fallbackLinks = item.url ? [{ url: item.url, label: item.linkLabel }] : [];
+
+  [...links, ...fallbackLinks].forEach((linkItem) => {
+    const url = typeof linkItem === 'string' ? linkItem : linkItem?.url;
+    if (!url) return;
+
+    const link = document.createElement('a');
+    link.className = 'news-link';
+    link.href = url;
+    link.target = '_blank';
+    link.rel = 'noopener';
+    link.textContent = typeof linkItem === 'string' ? t('news_link_label') : getLocalizedField(linkItem, 'label') || t('news_link_label');
+    linksWrap.appendChild(link);
+  });
 }
 
 async function loadIncidents() {
@@ -515,6 +656,6 @@ document.addEventListener('DOMContentLoaded', async () => {
   document.getElementById('year').textContent = new Date().getFullYear();
   document.querySelectorAll('.lang-btn').forEach((btn) => btn.addEventListener('click', () => setLanguage(btn.dataset.lang)));
   setLanguage(currentLang);
-  await loadIncidents();
+  await Promise.all([loadIncidents(), loadNews()]);
   setLanguage(currentLang);
 });
