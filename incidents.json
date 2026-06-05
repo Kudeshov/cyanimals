@@ -1,5 +1,34 @@
 [
   {
+    "id": "pareklisia-2026-06-04-001",
+    "city": "Limassol",
+    "district": "Pareklisia",
+    "title": {
+      "ru": "Кот ранен выстрелами в Пареклишии, полиция открыла дело",
+      "en": "Cat shot in Pareklisia, police investigation opened",
+      "el": "Γάτα πυροβολημένη στην Παρκέλιση, η αστυνομία άνοιξε έρευνα"
+    },
+    "date": "2026-06-04",
+    "lat": 34.74827636430756,
+    "lng": 33.16218384991112,
+    "type": "shooting",
+    "status": "injured",
+    "description": {
+      "ru": "4 июня в 21:30 волонтер, которая кормит колонию кошек в своем районе Пареклишии, услышала выстрелы возле своего дома. Она, ее муж и соседи выбежали на улицу и обнаружили раненого кота. Они также видели уезжающий квадроцикл. О происшествии сообщено в полицию. Кота отвезли в клинику, где врачи выявили множественные ранения: задние лапы не реагируют на манипуляции доктора, обнаружено одно из инородных тел в позвоночнике. Кот получает необходимую помощь и находится под наблюдением ветеринаров.",
+      "en": "On June 4 at 9:30 PM, a volunteer who feeds a cat colony in Pareklisia heard gunshots near her home. She, her husband, and neighbors ran outside and found an injured cat. They also saw a departing ATV. The incident was reported to police. The cat was taken to a veterinary clinic where doctors discovered multiple injuries: the hind legs are unresponsive to the doctor's manipulation, and a foreign body was found in the spine. The cat is receiving necessary care and is under veterinary observation.",
+      "el": "Στις 4 Ιουνίου στις 21:30, ένας εθελοντής που τρέφει μια αποικία γάτας στην Παρκέλιση άκουσε πυροβολισμό κοντά στο σπίτι του. Αυτός, ο σύζυγός του και οι γείτονές τους έτρεξαν έξω και βρήκαν μια τραυματισμένη γάτα. Είδαν επίσης ένα τετράτροχο να φεύγει. Το περιστατικό αναφέρθηκε στην αστυνομία. Η γάτα μεταφέρθηκε σε κτηνιατρική κλινική όπου οι γιατροί ανακάλυψαν πολλαπλές τραυματώσεις: τα πίσω πόδια δεν ανταποκρίνονται στον χειρισμό του γιατρού και ένα ξένο σώμα βρέθηκε στη σπονδυλική στήλη. Η γάτα λαμβάνει την απαραίτητη φροντίδα και είναι υπό κτηνιατρική παρακολούθηση. Σύνδεσμος χάρτη: https://maps.app.goo.gl/xKX3jSJ8vtqxYkyT7"
+    },
+    "images": [
+      "incidents/pareklisia-2026-06-04-001/1.jpg",
+      "incidents/pareklisia-2026-06-04-001/2.jpg",
+      "incidents/pareklisia-2026-06-04-001/3.jpg",
+      "incidents/pareklisia-2026-06-04-001/4.jpg",
+      "incidents/pareklisia-2026-06-04-001/5.jpg",
+      "incidents/pareklisia-2026-06-04-001/6.jpg",
+      "incidents/pareklisia-2026-06-04-001/1.mp4"
+    ]
+  },
+  {
     "id": "pafos-2026-05-08-001",
     "city": "Pafos",
     "district": "Mesa Chorio",
