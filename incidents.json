@@ -1,5 +1,29 @@
 [
   {
+    "id": "kato-polemidia-2026-06-02-001",
+    "city": "Limassol",
+    "district": "Agios Ioannis, Kato Polemidia",
+    "title": {
+      "ru": "Кот Биссуни потерял зрение после выстрелов в Агиос Иоаннисе",
+      "en": "Cat Bissouni lost vision after being shot in Agios Ioannis",
+      "el": "Ο γάτος Μπισούνι έχασε την όρασή του μετά από πυροβολισμό στον Άγιο Ιωάννη"
+    },
+    "date": "2026-06-02",
+    "lat": 34.67458824159893,
+    "lng": 33.020768358151656,
+    "type": "shooting",
+    "status": "injured",
+    "description": {
+      "ru": "2 июня в районе Агиос Иоаннис, Като Полемидия, нашли кота Биссуни в очень слабом состоянии. Его глаза побелели, хотя раньше они были ярко-зелеными. Нашедшая сразу связалась со Smart Vet Hub в Меса Гитония, и сотрудники приехали забрать кота. Через несколько дней ветеринар сообщила, что из его морды и глаз извлекли около 40 дробинок. Биссуни потерял около 90% зрения, но сейчас чувствует себя хорошо.",
+      "en": "On June 2 in Agios Ioannis, Kato Polemidia, Bissouni was found very weak, with his eyes turned white, although they had previously been bright green. The finder immediately contacted Smart Vet Hub in Mesa Geitonia, and they came to pick him up. A few days later the veterinarian reported that around 40 pellets had been removed from his face and eyes. Bissouni lost about 90% of his vision, but he is now feeling well.",
+      "el": "Στις 2 Ιουνίου στην περιοχή Άγιος Ιωάννης, Κάτω Πολεμίδια, βρέθηκε ο γάτος Μπισούνι πολύ αδύναμος, με τα μάτια του άσπρα, ενώ πριν ήταν έντονα πράσινα. Το άτομο που τον βρήκε επικοινώνησε αμέσως με το Smart Vet Hub στη Μέσα Γειτονιά και ήρθαν να τον παραλάβουν. Λίγες ημέρες αργότερα η κτηνίατρος ενημέρωσε ότι αφαιρέθηκαν περίπου 40 σφαιρίδια από το πρόσωπο και τα μάτια του. Ο Μπισούνι έχασε περίπου το 90% της όρασής του, αλλά τώρα αισθάνεται καλά."
+    },
+    "images": [
+      "incidents/kato-polemidia-2026-06-02-001/1.jpg",
+      "incidents/kato-polemidia-2026-06-02-001/2.jpg"
+    ]
+  },
+  {
     "id": "pareklisia-2026-06-04-001",
     "city": "Limassol",
     "district": "Pareklisia",
