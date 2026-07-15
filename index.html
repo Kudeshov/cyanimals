@@ -38,7 +38,6 @@
 
       <nav class="main-nav">
         <a href="#about" data-i18n="nav_about">About</a>
-        <a href="#news" data-i18n="nav_news">News</a>
         <a href="#map-section" data-i18n="nav_map">Map</a>
         <a href="#incidents" data-i18n="nav_incidents">Incidents</a>
         <a href="#cities" data-i18n="nav_cities">Cities</a>
@@ -67,18 +66,6 @@
             <a href="#report" class="btn btn-secondary" data-i18n="hero_btn_report">Send information</a>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section id="news" class="section news-section section-alt">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <h2 data-i18n="news_title">News</h2>
-            <p data-i18n="news_text">Latest project updates and public events.</p>
-          </div>
-        </div>
-        <div id="newsList" class="news-list" aria-live="polite"></div>
       </div>
     </section>
 
@@ -226,20 +213,6 @@
       <p data-i18n="footer_hint">Static site with JSON-based incident cards and Leaflet maps.</p>
     </div>
   </footer>
-
-  <template id="newsCardTemplate">
-    <article class="news-card">
-      <p class="news-date"></p>
-      <h3 class="news-title"></h3>
-      <p class="news-summary"></p>
-      <details class="news-details">
-        <summary data-i18n="news_open">Read more</summary>
-        <div class="news-details-text"></div>
-      </details>
-      <div class="news-links"></div>
-      <div class="news-gallery"></div>
-    </article>
-  </template>
 
   <template id="incidentCardTemplate">
     <article class="incident-card">

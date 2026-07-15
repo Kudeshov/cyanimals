@@ -223,11 +223,9 @@ const cityTranslations = {
 
 let currentLang = 'ru';
 let incidents = [];
-let newsItems = [];
 let mainMap;
 let mainMarkersLayer;
 const detailMaps = [];
-const NEWS_VISIBLE_LIMIT = 3;
 
 function detectLanguage() {
   const saved = localStorage.getItem('catsSiteLang');
@@ -261,7 +259,6 @@ function setLanguage(lang) {
     }
   });
   document.querySelectorAll('.lang-btn').forEach((btn) => btn.classList.toggle('active', btn.dataset.lang === lang));
-  renderNews();
   populateCityFilter();
   renderIncidents();
   renderCitySummary();
@@ -336,113 +333,6 @@ function formatNewsDate(value) {
     month: 'long',
     year: 'numeric'
   }).format(date);
-}
-
-async function loadNews() {
-  try {
-    const res = await fetch('news.json');
-    if (!res.ok) throw new Error(`Could not load news.json: ${res.status}`);
-    const data = await res.json();
-    newsItems = Array.isArray(data) ? data : [];
-  } catch (err) {
-    newsItems = [];
-    console.warn('Could not load news.json', err);
-  }
-  renderNews();
-}
-
-function renderNews() {
-  const list = document.getElementById('newsList');
-  const tpl = document.getElementById('newsCardTemplate');
-  if (!list || !tpl) return;
-
-  list.innerHTML = '';
-  const visibleNews = [...newsItems]
-    .sort((a, b) => dateSortValue(b.publishedAt || b.date) - dateSortValue(a.publishedAt || a.date))
-    .slice(0, NEWS_VISIBLE_LIMIT);
-
-  if (!visibleNews.length) {
-    const empty = document.createElement('p');
-    empty.className = 'news-empty';
-    empty.textContent = t('news_empty');
-    list.appendChild(empty);
-    return;
-  }
-
-  visibleNews.forEach((item) => {
-    const node = tpl.content.cloneNode(true);
-    const card = node.querySelector('.news-card');
-    const date = node.querySelector('.news-date');
-    const title = node.querySelector('.news-title');
-    const summary = node.querySelector('.news-summary');
-    const details = node.querySelector('.news-details');
-    const detailsText = node.querySelector('.news-details-text');
-    const detailsSummary = details?.querySelector('summary');
-    const gallery = node.querySelector('.news-gallery');
-    const links = node.querySelector('.news-links');
-
-    if (item.id) card.dataset.newsId = item.id;
-    date.textContent = formatNewsDate(item.date || item.publishedAt);
-    title.textContent = getLocalizedField(item, 'title');
-    const summaryText = getLocalizedField(item, 'summary');
-    const bodyText = getLocalizedField(item, 'body') || getLocalizedField(item, 'description');
-    summary.textContent = summaryText;
-
-    if (detailsSummary) detailsSummary.textContent = t('news_open');
-    if (bodyText.trim() && bodyText.trim() !== summaryText.trim()) {
-      bodyText.split('\n\n').map((p) => p.trim()).filter(Boolean).forEach((paragraph) => {
-        const p = document.createElement('p');
-        p.textContent = paragraph;
-        detailsText.appendChild(p);
-      });
-    } else {
-      details.remove();
-    }
-
-    renderNewsGallery(item, gallery);
-    renderNewsLinks(item, links);
-    list.appendChild(node);
-  });
-}
-
-function renderNewsGallery(item, gallery) {
-  const images = Array.isArray(item.images) ? item.images : [];
-  images.forEach((image) => {
-    const src = typeof image === 'string' ? image : image?.src;
-    if (!src) return;
-
-    const link = document.createElement('a');
-    link.href = src;
-    link.target = '_blank';
-    link.rel = 'noopener';
-
-    const img = document.createElement('img');
-    img.src = src;
-    img.loading = 'lazy';
-    img.alt = typeof image === 'string' ? getLocalizedField(item, 'title') : getLocalizedField(image, 'alt') || getLocalizedField(item, 'title');
-    img.addEventListener('error', () => link.remove(), { once: true });
-
-    link.appendChild(img);
-    gallery.appendChild(link);
-  });
-}
-
-function renderNewsLinks(item, linksWrap) {
-  const links = Array.isArray(item.links) ? item.links : [];
-  const fallbackLinks = item.url ? [{ url: item.url, label: item.linkLabel }] : [];
-
-  [...links, ...fallbackLinks].forEach((linkItem) => {
-    const url = typeof linkItem === 'string' ? linkItem : linkItem?.url;
-    if (!url) return;
-
-    const link = document.createElement('a');
-    link.className = 'news-link';
-    link.href = url;
-    link.target = '_blank';
-    link.rel = 'noopener';
-    link.textContent = typeof linkItem === 'string' ? t('news_link_label') : getLocalizedField(linkItem, 'label') || t('news_link_label');
-    linksWrap.appendChild(link);
-  });
 }
 
 async function loadIncidents() {
@@ -656,6 +546,6 @@ document.addEventListener('DOMContentLoaded', async () => {
   document.getElementById('year').textContent = new Date().getFullYear();
   document.querySelectorAll('.lang-btn').forEach((btn) => btn.addEventListener('click', () => setLanguage(btn.dataset.lang)));
   setLanguage(currentLang);
-  await Promise.all([loadIncidents(), loadNews()]);
+  await loadIncidents();
   setLanguage(currentLang);
 });

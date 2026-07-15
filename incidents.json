@@ -1,12 +1,33 @@
 [
   {
+    "id": "pafos-2026-07-13-001",
+    "city": "Pafos",
+    "district": "Peyia, Agios Georgios",
+    "title": {
+      "ru": "Колония котов рядом с рестораном Agios Georgios регулярно подвергается обстрелам",
+      "en": "Cat colony near Agios Georgios restaurant is regularly shot at",
+      "el": "Αποικία γατών δίπλα στο εστιατόριο Agios Georgios δέχεται συχνά πυροβολισμούς"
+    },
+    "date": "2026-07-13",
+    "lat": 34.90381734756864,
+    "lng": 32.3204533250719,
+    "type": "shooting",
+    "status": "injured",
+    "description": {
+      "ru": "В районе Агияс Георгиос, Пейя, колония котов, проживающих рядом с рестораном Agios Georgios, регулярно подвергается обстрелам. У многих котов по 2–4 пули в теле. Коты часто бесследно пропадают, некоторые возвращаются ранеными, и волонтеры оказывают им помощь.",
+      "en": "In Agios Georgios, Peyia, a colony of cats living near the Agios Georgios restaurant is regularly targeted by gunfire. Many cats have 2–4 bullets inside their bodies. Cats often disappear without a trace, while some return injured and receive help from volunteers.",
+      "el": "Στην περιοχή Άγιος Γεώργιος, Πέγια, μια αποικία γατών που ζει δίπλα στο εστιατόριο Agios Georgios δέχεται συχνά πυροβολισμούς. Σε πολλές γάτες υπάρχουν 2–4 σφαίρες μέσα στο σώμα. Οι γάτες συχνά εξαφανίζονται χωρίς ίχνη, ενώ κάποιες επιστρέφουν τραυματισμένες και λαμβάνουν βοήθεια από εθελοντές."
+    },
+    "images": []
+  },
+  {
     "id": "larnaca-2026-07-12-001",
     "city": "Larnaca",
     "district": "Larnaca",
     "title": {
-      "ru": "Кот, кормимый женщиной, вернулся с простреленным глазом в Ларнаке",
-      "en": "Cat fed by a woman returned with a shot eye in Larnaca",
-      "el": "Ο γάτος που ταΐζει γυναίκα επέστρεψε με πυροβολημένο μάτι στη Λάρνακα"
+      "ru": "Коту выстрелили в глаз в Ларнаке",
+      "en": "Cat shot in the eye in Larnaca",
+      "el": "Πυροβολήθηκε στο μάτι στη Λάρνακα"
     },
     "date": "2026-07-12",
     "lat": 34.83542613962699,
@@ -134,9 +155,9 @@
     "id": "nicosia-2026-05-05-001",
     "city": "Nicosia",
     "title": {
-      "ru": "Кошка с тремя пеллетами от пневматики в голове",
-      "en": "Cat found with three airgun pellets in her head",
-      "el": "Γάτα με τρία σφαιρίδια από αεροβόλο στο κεφάλι"
+      "ru": "Кошка с тремя пулями от пневматики в голове",
+      "en": "Cat found with three bullets from an air gun in her head",
+      "el": "Γάτα με τρεις σφαίρες από αεροβόλο στο κεφάλι"
     },
     "date": "2026-05-05",
     "lat": 35.11778304437489,
@@ -202,6 +223,27 @@
       "incidents/limassol-2026-04-10-002/2.jpg",
       "incidents/limassol-2026-04-10-002/3.jpg"
     ]
+  },
+  {
+    "id": "nicosia-2026-06-22-001",
+    "city": "Nicosia",
+    "district": "Nicosia",
+    "title": {
+      "ru": "Кошка Рита выжила после операции на простреленной лапе в Никосии",
+      "en": "Rita the cat survived after surgery for a gunshot leg in Nicosia",
+      "el": "Η γάτα Ρίτα επέζησε μετά από χειρουργείο σε πυροβολημένο πόδι στη Λευκωσία"
+    },
+    "date": "2026-06-22",
+    "lat": 35.11778304437489,
+    "lng": 33.311411836072416,
+    "type": "shooting",
+    "status": "injured",
+    "description": {
+      "ru": "Кошка по кличке Рита родила котят возле дома местных жителей. Через некоторое время она была найдена хромающей во дворе. Оказалось, что у нее в лапе была дробинка — инцидент, вероятно, произошел за несколько часов до того, как местные жители нашли ее, потому что рана уже подсохла. Ей сделали операцию у ортопеда, так как лапа была раздроблена; к счастью, она выжила и сейчас восстанавливается.",
+      "en": "Rita the cat gave birth to kittens near local residents' home. After some time, she was found limping in the yard. It turned out she had a pellet in her leg — the incident likely happened a few hours before the locals found her, as the wound had already dried. She underwent surgery performed by an orthopedist because her leg was shattered; fortunately, she pulled through and is now recovering.",
+      "el": "Η γάτα με το όνομα Ρίτα γέννησε γατάκια κοντά στο σπίτι τοπικών κατοίκων. Μετά από κάποιο χρόνο βρέθηκε να κουτσαίνει στην αυλή. Αποδείχθηκε ότι είχε ένα σφαιρίδιο στο πόδι της — το περιστατικό πιθανότατα συνέβη λίγες ώρες πριν το βρουν οι κάτοικοι, αφού το τραύμα είχε ήδη στεγνώσει. Υποβλήθηκε σε χειρουργείο από ορθοπεδικό, επειδή το πόδι της είχε συντριβεί· ευτυχώς, επέζησε και τώρα αναρρώνει."
+    },
+    "images": []
   },
   {
     "id": "limassol-2026-03-27-003",
@@ -404,6 +446,48 @@
       "incidents/achelia-2026-03-27-011/1.jpg",
       "incidents/achelia-2026-03-27-011/2.jpg"
     ]
+  },
+  {
+    "id": "nicosia-2024-10-23-001",
+    "city": "Nicosia",
+    "district": "Nicosia",
+    "title": {
+      "ru": "Пятимесячный котёнок погиб после выстрела в Никосии",
+      "en": "Five-month-old kitten died after being shot in Nicosia",
+      "el": "Ένα 5μηνο γατάκι πέθανε μετά από πυροβολισμό στη Λευκωσία"
+    },
+    "date": "2024-10-23",
+    "lat": 35.11778304437489,
+    "lng": 33.311411836072416,
+    "type": "shooting",
+    "status": "dead",
+    "description": {
+      "ru": "Пятимесячный котёнок был найден во дворе одного местного жителя. Его подстрелили из пневматического оружия. После трёх дней ветеринарного лечения котёнок умер от сепсиса, потому что пуля попала в желудок.",
+      "en": "A five-month-old kitten was found in the yard of a local resident. The kitten had been shot with a pellet. After three days of veterinary treatment, it ultimately died of sepsis because the pellet had struck its stomach.",
+      "el": "Ένα 5μηνο γατάκι βρέθηκε στην αυλή ενός τοπικού κατοίκου. Το γατάκι πυροβολήθηκε με σφαιρίδιο. Μετά από τρεις ημέρες κτηνιατρικής θεραπείας, τελικά πέθανε από σηψαιμία, επειδή το σφαιρίδιο χτύπησε το στομάχι του."
+    },
+    "images": []
+  },
+  {
+    "id": "nicosia-2025-10-14-001",
+    "city": "Nicosia",
+    "district": "Nicosia",
+    "title": {
+      "ru": "Кошка Пури погибла после выстрела в Никосии",
+      "en": "Cat Pouri died after being shot in Nicosia",
+      "el": "Η γάτα Πουρί πέθανε μετά από πυροβολισμό στη Λευκωσία"
+    },
+    "date": "2025-10-14",
+    "lat": 35.11778304437489,
+    "lng": 33.311411836072416,
+    "type": "shooting",
+    "status": "dead",
+    "description": {
+      "ru": "Кошку по имени Пури вечером с 8 до 9 часов нашли местные жители во дворе, плачущей и испытывающей боль. Пуля попала ей в лапу. Изначально ветеринар сказал, что она выживет. Но через два дня она умерла от сепсиса.",
+      "en": "The cat named Pouri was found by local residents in their yard between 8 and 9 in the evening, crying and in pain. The pellet had struck her leg. Initially, the veterinarian said she would survive, but two days later she died of sepsis.",
+      "el": "Η γάτα με το όνομα Πουρί βρέθηκε από κατοίκους της περιοχής στην αυλή τους μεταξύ 8 και 9 το βράδυ, να κλαίει και να πονά. Το σφαιρίδιο είχε χτυπήσει το πόδι της. Αρχικά, ο κτηνίατρος είπε ότι θα επιβιώσει, αλλά δύο ημέρες αργότερα πέθανε από σηψαιμία."
+    },
+    "images": []
   },
   {
     "id": "limassol-2025-02-20-012",
