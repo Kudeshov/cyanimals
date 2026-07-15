@@ -1,5 +1,28 @@
 [
   {
+    "id": "larnaca-2026-07-12-001",
+    "city": "Larnaca",
+    "district": "Larnaca",
+    "title": {
+      "ru": "Кот, кормимый женщиной, вернулся с простреленным глазом в Ларнаке",
+      "en": "Cat fed by a woman returned with a shot eye in Larnaca",
+      "el": "Ο γάτος που ταΐζει γυναίκα επέστρεψε με πυροβολημένο μάτι στη Λάρνακα"
+    },
+    "date": "2026-07-12",
+    "lat": 34.83542613962699,
+    "lng": 33.57984397171264,
+    "type": "shooting",
+    "status": "injured",
+    "description": {
+      "ru": "Женщина кормит уличных котов около дома. Зимой 2026 года один из них был ранен — пуля попала в челюсть. По словам женщины, выстрел сделал сосед, недовольный тем, что кот спит на его уличной мебели. 12 июля 2026 года кот пропал на три дня и вернулся с простреленным глазом. Кота удалось поймать и доставить в клинику; сейчас ему оказывают помощь.",
+      "en": "A woman feeds street cats near her home. In winter 2026 one of them was injured — a bullet hit his jaw. The woman says a neighbor fired at him after he slept on the neighbor's outdoor furniture. On July 12, 2026 the cat disappeared for three days and returned with a shot eye. The cat was caught and taken to a clinic; he is currently receiving care.",
+      "el": "Μια γυναίκα ταΐζει αδέσποτες γάτες κοντά στο σπίτι της. Τον χειμώνα του 2026 μία από αυτές τραυματίστηκε — μια σφαίρα χτύπησε την κάτω γνάθο του. Η γυναίκα λέει ότι ο γείτονας πυροβόλησε γιατί ο γάτος κοιμόταν στα εξωτερικά έπιπλά του. Στις 12 Ιουλίου 2026 ο γάτος χάθηκε για τρεις μέρες και επέστρεψε με τραυματισμένο μάτι από σφαίρα. Ο γάτος πιάστηκε και μεταφέρθηκε στην κλινική· τώρα του παρέχεται φροντίδα."
+    },
+    "images": [
+      "incidents/larnaca-2026-07-12-001/1.jpg"
+    ]
+  },
+  {
     "id": "kato-polemidia-2026-06-02-001",
     "city": "Limassol",
     "district": "Agios Ioannis, Kato Polemidia",
@@ -507,5 +530,6 @@
       "incidents/nicosia-2026-04-10-002/3.jpg",
       "incidents/nicosia-2026-04-10-002/4.jpg"
     ]
-  }
+  },
 ]
+
