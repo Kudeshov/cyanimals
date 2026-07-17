@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<!-- Google Analytics GA4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NZZNLMR9BN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-NZZNLMR9BN');
+</script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="news_page_title">News - Animals of Cyprus</title>
+  <meta name="description" content="News and updates about animal welfare, adoption, lost animals and public events in Cyprus." />
+  <meta property="og:title" content="Animals of Cyprus News" />
+  <meta property="og:description" content="News and updates about animal welfare, adoption, lost animals and public events in Cyprus." />
+  <meta property="og:image" content="https://cyanimals.com/assets/og-preview.jpg" />
+  <meta property="og:url" content="https://cyanimals.com/news.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Cyprus Animal Abuse Incidents" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Animals of Cyprus News" />
+  <meta name="twitter:description" content="News and updates about animal welfare, adoption, lost animals and public events in Cyprus." />
+  <meta name="twitter:image" content="https://cyanimals.com/assets/og-preview.jpg" />
+  <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html#top" class="brand">
+        <span class="brand-icon">🐾</span>
+        <span class="brand-text" data-i18n="brand_name">Animals of Cyprus</span>
+      </a>
+
+      <nav class="main-nav">
+        <a href="index.html#about" data-i18n="nav_about">About</a>
+        <a href="news.html" data-i18n="nav_news">News</a>
+        <a href="index.html#map-section" data-i18n="nav_map">Map</a>
+        <a href="index.html#incidents" data-i18n="nav_incidents">Incidents</a>
+        <a href="index.html#cities" data-i18n="nav_cities">Cities</a>
+        <a href="index.html#report" data-i18n="nav_report">Report</a>
+      </nav>
+
+      <div class="lang-switcher" aria-label="Language switcher">
+        <button class="lang-btn" data-lang="ru">RU</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="el">EL</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="page-hero">
+      <div class="container narrow">
+        <p class="eyebrow" data-i18n="news_title">News</p>
+        <h1 data-i18n="news_page_heading">News feed</h1>
+        <p class="hero-text" data-i18n="news_page_text">
+          Current updates, adoption posts, lost animals and public events.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div id="newsFeed" class="news-feed"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> <span data-i18n="footer_project">Animals of Cyprus</span></p>
+      <p data-i18n="footer_hint">A project dedicated to documenting violence against animals in Cyprus and raising public awareness of this issue.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

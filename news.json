@@ -1,22 +1,142 @@
 [
   {
+    "id": "kolla-art-exhibition-cat-monastery-2026-09-05",
+    "status": "active",
+    "date": "2026-09-05",
+    "publishedAt": "2026-07-16",
+    "title": {
+      "ru": "Kolla, Cyberness Market 5-6 сентября: арт-выставка в помощь котикам Кошачьего монастыря",
+      "en": "Kolla, Cyberness Market on September 5-6: art exhibition to help the Cat Monastery cats",
+      "el": "Kolla, Cyberness Market στις 5-6 Σεπτεμβρίου: έκθεση τέχνης για τις γάτες του Μοναστηριού των Γατών"
+    },
+    "summary": {
+      "ru": "5-6 сентября на Колле пройдет выставка картин в помощь котикам Кошачьего монастыря.",
+      "en": "On September 5-6, Kolla will host an art exhibition to support the Cat Monastery cats.",
+      "el": "Στις 5-6 Σεπτεμβρίου στο Kolla θα γίνει έκθεση τέχνης για την υποστήριξη των γατών του Μοναστηριού των Γατών."
+    },
+    "body": {
+      "ru": "5-6 сентября на Колле пройдет выставка картин: желающие смогут купить работы, а часть средств будет передана Кошачьему монастырю.\n\nТакже будут мастер-классы по рисованию и создание скетчей по фото ваших питомцев. Приходите знакомиться, рисовать и помогать котикам!",
+      "en": "On September 5-6, Kolla will host an art exhibition where visitors will be able to buy paintings, with part of the proceeds donated to the Cat Monastery.\n\nThere will also be drawing workshops and pet sketches made from photos. Come meet people, draw, and help the cats!",
+      "el": "Στις 5-6 Σεπτεμβρίου στο Kolla θα γίνει έκθεση ζωγραφικής: οι επισκέπτες θα μπορούν να αγοράσουν έργα και μέρος των εσόδων θα διατεθεί στο Μοναστήρι των Γατών.\n\nΘα υπάρχουν επίσης εργαστήρια ζωγραφικής και δημιουργία σκίτσων από φωτογραφίες των κατοικιδίων σας. Ελάτε να γνωριστούμε, να ζωγραφίσουμε και να βοηθήσουμε τις γάτες!"
+    },
+    "links": [],
+    "images": [
+      "news/kolla-art-exhibition-cat-monastery-2026-09-05/1.jpg"
+    ]
+  },
+  {
+    "id": "ginger-kitten-looking-for-home-2026-07-16",
+    "status": "active",
+    "date": "2026-07-16",
+    "publishedAt": "2026-07-16",
+    "title": {
+      "ru": "Ищет дом рыжий тигренок",
+      "en": "Ginger kitten looking for a home",
+      "el": "Τζίντζερ γατάκι ψάχνει σπίτι"
+    },
+    "summary": {
+      "ru": "Малышу около месяца, он ест сам, ручной и ласковый. Нужен постоянный или временный дом до октября.",
+      "en": "The kitten is about one month old, eats on his own, and is gentle and affectionate. He needs a permanent or temporary home until October.",
+      "el": "Το γατάκι είναι περίπου ενός μηνός, τρώει μόνο του, είναι ήμερο και τρυφερό. Χρειάζεται μόνιμο ή προσωρινό σπίτι μέχρι τον Οκτώβριο."
+    },
+    "body": {
+      "ru": "Ищет дом рыжий тигренок! Малышу нужен постоянный или временный дом до октября. Ему около месяца, он ест сам, ручной и ласковый.\n\nКотенка привезут в любой город.",
+      "en": "A little ginger kitten is looking for a home. He needs a permanent home or a temporary foster home until October. He is about one month old, eats on his own, and is gentle and affectionate.\n\nHe can be brought to any city.",
+      "el": "Ένα μικρό τζίντζερ γατάκι ψάχνει σπίτι. Χρειάζεται μόνιμο ή προσωρινό σπίτι μέχρι τον Οκτώβριο. Είναι περίπου ενός μηνός, τρώει μόνο του, είναι ήμερο και τρυφερό.\n\nΜπορεί να μεταφερθεί σε οποιαδήποτε πόλη."
+    },
+    "links": [],
+    "images": [
+      "news/ginger-kitten-looking-for-home-2026-07-16/1.jpg",
+      "news/ginger-kitten-looking-for-home-2026-07-16/2.jpg",
+      "news/ginger-kitten-looking-for-home-2026-07-16/3.jpg"
+    ]
+  },
+  {
+    "id": "lost-cat-bonya-limassol-2026-07-16",
+    "status": "active",
+    "date": "2026-07-16",
+    "publishedAt": "2026-07-16",
+    "title": {
+      "ru": "Пропала кошка Боня в районе Каника, Лимасол",
+      "en": "Bonya the cat is missing in the Kanika area of Limassol",
+      "el": "Χάθηκε η γάτα Μπόνια στην περιοχή Κανίκα, Λεμεσός"
+    },
+    "summary": {
+      "ru": "Боня могла быть рядом с Odysseia Hotel Kapetanios или зайти внутрь. Нашедшему кошку - вознаграждение 300 евро.",
+      "en": "Bonya may be near Odysseia Hotel Kapetanios or may have gone inside. A 300 euro reward is offered.",
+      "el": "Η Μπόνια μπορεί να βρίσκεται κοντά στο Odysseia Hotel Kapetanios ή να έχει μπει μέσα. Προσφέρεται αμοιβή 300 ευρώ."
+    },
+    "body": {
+      "ru": "Пропала кошка Боня в районе Каника, Лимасол. Она может быть рядом с Odysseia Hotel Kapetanios, возможно, зашла внутрь и находится до сих пор в отеле.\n\nЕсли вы видели Боню, позвоните по телефону 99905907. Нашедшему кошку - вознаграждение 300 евро.",
+      "en": "Bonya the cat is missing in the Kanika area of Limassol. She may be near Odysseia Hotel Kapetanios and may have gone inside, possibly still remaining in the hotel.\n\nIf you have seen Bonya, please call 99905907. A 300 euro reward is offered for finding her.",
+      "el": "Χάθηκε η γάτα Μπόνια στην περιοχή Κανίκα στη Λεμεσό. Μπορεί να βρίσκεται κοντά στο Odysseia Hotel Kapetanios και ίσως να έχει μπει μέσα, παραμένοντας ακόμη στο ξενοδοχείο.\n\nΑν έχετε δει τη Μπόνια, καλέστε στο 99905907. Προσφέρεται αμοιβή 300 ευρώ για όποιον τη βρει."
+    },
+    "contacts": [
+      "99905907"
+    ],
+    "links": [
+      {
+        "url": "https://www.booking.com/hotel/cy/kapetanios-odyssia-limassol.html?label=New_English_EN_CY_26745747985-p8r6f3lFRGKH470rAWcNFAS813024753582%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi55338329585%3Atikwl-386014540317%3Alp1003698%3Ali%3Adec%3Adm%3Aag26745747985%3Acmp394170025&sid=5a4fcac911f9711a116d567c8302f48a&gclid=Cj0KCQjwguLSBhDLARIsAH-yPrFKKEEvLJCKQ62Q2QouXphQB8MK5-BSk1rKYsTqE6hP65yQ4NJrv8IaAiiJEALw_wcB&aid=318615&ucfs=1&arphpl=1&dest_id=-2738495&dest_type=city&group_adults=2&req_adults=2&no_rooms=2&group_children=1&req_children=1&age=13&req_age=13&hpos=1&hapos=1&sr_order=popularity&srpvid=dbf853be42d600a5&srepoch=1784202879&from=searchresults",
+        "label": {
+          "ru": "Odysseia Hotel Kapetanios",
+          "en": "Odysseia Hotel Kapetanios",
+          "el": "Odysseia Hotel Kapetanios"
+        }
+      }
+    ],
+    "images": [
+      "news/lost-cat-bonya-limassol-2026-07-16/1.jpg"
+    ]
+  },
+  {
+    "id": "knopa-looking-for-home-2026-07-16",
+    "status": "active",
+    "date": "2026-07-16",
+    "publishedAt": "2026-07-16",
+    "title": {
+      "ru": "Кнопа ищет дом",
+      "en": "Knopa is looking for a home",
+      "el": "Η Κνόπα ψάχνει σπίτι"
+    },
+    "summary": {
+      "ru": "Кнопа красивая, активная, веселая, здорова и привита. Любит сидеть на ручках.",
+      "en": "Knopa is beautiful, active, cheerful, healthy and vaccinated. She loves sitting in people's arms.",
+      "el": "Η Κνόπα είναι όμορφη, δραστήρια, χαρούμενη, υγιής και εμβολιασμένη. Της αρέσει να κάθεται αγκαλιά."
+    },
+    "body": {
+      "ru": "Ищет дом Кнопа - красавица, активная умница, веселая, хорошо ест и любит сидеть на ручках. Идеальная!\n\nКнопа здорова и привита. Звоните: 97 653834.",
+      "en": "Knopa is looking for a home. She is beautiful, active, smart, cheerful, eats well and loves sitting in people's arms. She is wonderful.\n\nKnopa is healthy and vaccinated. Call: 97 653834.",
+      "el": "Η Κνόπα ψάχνει σπίτι. Είναι όμορφη, δραστήρια, έξυπνη, χαρούμενη, τρώει καλά και της αρέσει να κάθεται αγκαλιά. Είναι υπέροχη.\n\nΗ Κνόπα είναι υγιής και εμβολιασμένη. Καλέστε: 97 653834."
+    },
+    "contacts": [
+      "97 653834"
+    ],
+    "links": [],
+    "images": [
+      "news/knopa-looking-for-home-2026-07-16/1.jpg",
+      "news/knopa-looking-for-home-2026-07-16/2.jpg",
+      "news/knopa-looking-for-home-2026-07-16/3.jpg"
+    ]
+  },
+  {
     "id": "cat-monastery-clean-up-2026-06-06",
+    "status": "archived",
     "date": "2026-06-06",
     "publishedAt": "2026-06-03",
     "title": {
-      "ru": "День волонтёрской уборки в Кошачьем монастыре 6 июня",
+      "ru": "День волонтерской уборки в Кошачьем монастыре 6 июня",
       "en": "Volunteer clean-up day at the Cat Monastery on June 6",
       "el": "Ημέρα εθελοντικού καθαρισμού στο Μοναστήρι των Γατών στις 6 Ιουνίου"
     },
     "summary": {
-      "ru": "Волонтёрская уборка в Кошачьем монастыре.",
-      "en": "Volunteer clean-up at the Cat Monastery.",
-      "el": "Εθελοντικός καθαρισμός στο Μοναστήρι των Γατών."
+      "ru": "Архив: волонтерская уборка в Кошачьем монастыре.",
+      "en": "Archive: volunteer clean-up at the Cat Monastery.",
+      "el": "Αρχείο: εθελοντικός καθαρισμός στο Μοναστήρι των Γατών."
     },
     "body": {
-      "ru": "Volunteer clean-up day at the Cat Monastery on June 6.\n\nПриглашаем вас присоединиться к специальному волонтёрскому дню уборки 06.06.2026 в 8:30-9:00 в Monastery of St Nicholas of the Cats. Подробности опубликованы на Facebook.",
-      "en": "Volunteer clean-up day at the Cat Monastery on June 6.\n\nWe invite you to join a special volunteer clean-up day on 06.06.2026 at 8:30-9:00 AM at Monastery of St Nicholas of the Cats. Details are on Facebook.",
-      "el": "Ημέρα εθελοντικού καθαρισμού στο Μοναστήρι των Γατών στις 6 Ιουνίου.\n\nΣας προσκαλούμε να συμμετάσχετε σε ειδική ημέρα εθελοντικού καθαρισμού στις 06.06.2026, 8:30-9:00 π.μ., στο Monastery of St Nicholas of the Cats. Οι λεπτομέρειες είναι στο Facebook."
+      "ru": "6 июня 2026 года прошел волонтерский день уборки в Monastery of St Nicholas of the Cats. Новость сохранена в архиве.",
+      "en": "A volunteer clean-up day took place on June 6, 2026 at Monastery of St Nicholas of the Cats. This news item is kept in the archive.",
+      "el": "Στις 6 Ιουνίου 2026 πραγματοποιήθηκε ημέρα εθελοντικού καθαρισμού στο Monastery of St Nicholas of the Cats. Η είδηση διατηρείται στο αρχείο."
     },
     "links": [
       {

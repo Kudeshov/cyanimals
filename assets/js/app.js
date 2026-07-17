@@ -24,6 +24,15 @@ const translations = {
     news_open: 'Читать полностью',
     news_empty: 'Новости скоро появятся.',
     news_link_label: 'Открыть ссылку',
+    news_all: 'Все новости',
+    news_page_title: 'Новости - Животные Кипра',
+    news_page_heading: 'Лента новостей',
+    news_page_text: 'Актуальные обновления, объявления о пристройстве, пропавшие животные и публичные события.',
+    news_contact_label: 'Контакт:',
+    news_archive_label: 'Архив',
+    share_facebook: 'Facebook',
+    share_telegram: 'Telegram',
+    share_whatsapp: 'WhatsApp',
     map_title: 'Карта инцидентов',
     map_text: 'Маркеры показывают примерные места инцидентов, которые сейчас добавлены на сайт.',
     legend_shooting: 'Стрельба',
@@ -99,6 +108,15 @@ const translations = {
     news_open: 'Read more',
     news_empty: 'News will appear here soon.',
     news_link_label: 'Open link',
+    news_all: 'All news',
+    news_page_title: 'News - Animals of Cyprus',
+    news_page_heading: 'News feed',
+    news_page_text: 'Current updates, adoption posts, lost animals and public events.',
+    news_contact_label: 'Contact:',
+    news_archive_label: 'Archive',
+    share_facebook: 'Facebook',
+    share_telegram: 'Telegram',
+    share_whatsapp: 'WhatsApp',
     map_title: 'Incident map',
     map_text: 'Markers show the approximate locations of incidents currently included on the site.',
     legend_shooting: 'Shooting',
@@ -174,6 +192,15 @@ const translations = {
     news_open: 'Διαβάστε περισσότερα',
     news_empty: 'Τα νέα θα εμφανιστούν εδώ σύντομα.',
     news_link_label: 'Άνοιγμα συνδέσμου',
+    news_all: 'Όλα τα νέα',
+    news_page_title: 'Νέα - Ζώα της Κύπρου',
+    news_page_heading: 'Ροή ειδήσεων',
+    news_page_text: 'Τρέχουσες ενημερώσεις, αναρτήσεις υιοθεσίας, χαμένα ζώα και δημόσιες εκδηλώσεις.',
+    news_contact_label: 'Επικοινωνία:',
+    news_archive_label: 'Αρχείο',
+    share_facebook: 'Facebook',
+    share_telegram: 'Telegram',
+    share_whatsapp: 'WhatsApp',
     map_title: 'Χάρτης περιστατικών',
     map_text: 'Οι δείκτες δείχνουν τις κατά προσέγγιση τοποθεσίες των περιστατικών που έχουν προστεθεί στον ιστότοπο.',
     legend_shooting: 'Πυροβολισμός',
@@ -235,6 +262,7 @@ const cityTranslations = {
 
 let currentLang = 'ru';
 let incidents = [];
+let newsItems = [];
 let mainMap;
 let mainMarkersLayer;
 const detailMaps = [];
@@ -272,6 +300,7 @@ function setLanguage(lang) {
   });
   document.querySelectorAll('.lang-btn').forEach((btn) => btn.classList.toggle('active', btn.dataset.lang === lang));
   populateCityFilter();
+  renderNews();
   renderIncidents();
   renderCitySummary();
   renderMainMap();
@@ -347,13 +376,324 @@ function formatNewsDate(value) {
   }).format(date);
 }
 
+function sortedNewsItems(items = newsItems) {
+  return [...items].sort((a, b) => {
+    const archivedA = a.status === 'archived' ? 1 : 0;
+    const archivedB = b.status === 'archived' ? 1 : 0;
+    if (archivedA !== archivedB) return archivedA - archivedB;
+    return dateSortValue(b.publishedAt || b.date) - dateSortValue(a.publishedAt || a.date)
+      || dateSortValue(b.date) - dateSortValue(a.date);
+  });
+}
+
+function activeNewsItems() {
+  return sortedNewsItems(newsItems.filter((item) => item.status !== 'archived'));
+}
+
+function newsItemUrl(item) {
+  const url = new URL('news.html', window.location.href);
+  url.hash = item.id;
+  return url.href;
+}
+
+function incidentItemUrl(item) {
+  const url = new URL('index.html', window.location.href);
+  url.hash = item.id;
+  return url.href;
+}
+
+function createNewsImage(src, alt, className = 'news-thumb', onError) {
+  const wrap = document.createElement('div');
+  wrap.className = className;
+  const img = document.createElement('img');
+  img.src = src;
+  img.alt = alt;
+  img.loading = 'lazy';
+  img.addEventListener('load', () => {
+    wrap.classList.toggle('is-portrait', img.naturalHeight > img.naturalWidth * 1.15);
+  });
+  img.addEventListener('error', () => {
+    wrap.remove();
+    if (typeof onError === 'function') onError();
+  });
+  wrap.appendChild(img);
+  return wrap;
+}
+
+function appendParagraphs(parent, text) {
+  text.split(/\n\n+/).map((paragraph) => paragraph.trim()).filter(Boolean).forEach((paragraph) => {
+    const p = document.createElement('p');
+    p.textContent = paragraph;
+    parent.appendChild(p);
+  });
+}
+
+function createShareButtons(item, url = newsItemUrl(item)) {
+  const title = getLocalizedField(item, 'title');
+  const encodedUrl = encodeURIComponent(url);
+  const encodedTitle = encodeURIComponent(title);
+  const encodedText = encodeURIComponent(`${title} ${url}`);
+  const targets = [
+    {
+      label: t('share_facebook'),
+      className: 'share-facebook',
+      url: `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`,
+      icon: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.2 8.1V6.6c0-.7.5-.9.8-.9h2V2.3L14.2 2c-3.1 0-3.8 2.3-3.8 3.8v2.3H8v3.8h2.4V22h4.1V11.9h2.9l.4-3.8h-3.6Z"/></svg>'
+    },
+    {
+      label: t('share_telegram'),
+      className: 'share-telegram',
+      url: `https://t.me/share/url?url=${encodedUrl}&text=${encodedTitle}`,
+      icon: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.7 4.3 18.4 20c-.2 1.1-.9 1.4-1.8.9l-5-3.7-2.4 2.3c-.3.3-.5.5-1 .5l.4-5.1 9.3-8.4c.4-.4-.1-.6-.6-.2L5.8 13.5.9 12c-1.1-.3-1.1-1.1.2-1.6L20.3 3c.9-.3 1.7.2 1.4 1.3Z"/></svg>'
+    },
+    {
+      label: t('share_whatsapp'),
+      className: 'share-whatsapp',
+      url: `https://api.whatsapp.com/send?text=${encodedText}`,
+      icon: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a9.9 9.9 0 0 0-8.5 15L2.2 22l5.1-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.8-1.8-.8s-.4-.1-.6.2c-.2.3-.7.8-.8 1-.2.2-.3.2-.6.1-.2-.1-1-.4-2-1.2-.7-.6-1.2-1.4-1.4-1.6-.1-.3 0-.4.1-.5l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.1-.6-1.4-.8-1.9-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-1 1-1 2.4s1 2.7 1.2 2.9c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.7.6.7.2 1.3.2 1.8.1.6-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>'
+    }
+  ];
+
+  const wrap = document.createElement('div');
+  wrap.className = 'news-share';
+
+  targets.forEach((target) => {
+    const link = document.createElement('a');
+    link.className = target.className;
+    link.href = target.url;
+    link.target = '_blank';
+    link.rel = 'noopener';
+    link.setAttribute('aria-label', target.label);
+    link.title = target.label;
+    link.innerHTML = target.icon;
+    wrap.appendChild(link);
+  });
+
+  return wrap;
+}
+
+function appendNewsLinks(parent, item) {
+  const links = Array.isArray(item.links) ? item.links : [];
+  const contacts = Array.isArray(item.contacts) ? item.contacts : [];
+  if (!links.length && !contacts.length) return;
+
+  const wrap = document.createElement('div');
+  wrap.className = 'news-links';
+
+  contacts.forEach((contact) => {
+    const link = document.createElement('a');
+    const tel = String(contact).replace(/[^\d+]/g, '');
+    link.href = `tel:${tel}`;
+    link.textContent = `${t('news_contact_label')} ${contact}`;
+    wrap.appendChild(link);
+  });
+
+  links.forEach((linkItem) => {
+    const url = typeof linkItem === 'string' ? linkItem : linkItem?.url;
+    if (!url) return;
+    const link = document.createElement('a');
+    link.href = url;
+    link.target = '_blank';
+    link.rel = 'noopener';
+    link.textContent = typeof linkItem === 'string' ? t('news_link_label') : getLocalizedField(linkItem, 'label') || t('news_link_label');
+    wrap.appendChild(link);
+  });
+
+  parent.appendChild(wrap);
+}
+
+function createNewsCard(item, options = {}) {
+  const compact = Boolean(options.compact);
+  const card = document.createElement('article');
+  card.className = compact ? 'news-card news-card-compact' : 'news-card news-card-full';
+  if (!compact) card.id = item.id;
+  if (item.status === 'archived') card.classList.add('is-archived');
+
+  const titleText = getLocalizedField(item, 'title');
+  const images = Array.isArray(item.images) ? item.images : [];
+  if (compact && images[0]) {
+    card.appendChild(createNewsImage(images[0], titleText, 'news-thumb', () => card.classList.add('news-card-no-image')));
+  } else if (compact) {
+    card.classList.add('news-card-no-image');
+  }
+
+  const content = document.createElement('div');
+  content.className = 'news-content';
+
+  const meta = document.createElement('div');
+  meta.className = 'news-meta';
+  const date = document.createElement('span');
+  date.textContent = formatNewsDate(item.date || item.publishedAt);
+  meta.appendChild(date);
+  if (item.status === 'archived') {
+    const badge = document.createElement('span');
+    badge.className = 'news-archive-badge';
+    badge.textContent = t('news_archive_label');
+    meta.appendChild(badge);
+  }
+  content.appendChild(meta);
+
+  const title = document.createElement(compact ? 'h3' : 'h2');
+  title.className = 'news-title';
+  title.textContent = titleText;
+  content.appendChild(title);
+
+  const summary = document.createElement('p');
+  summary.className = 'news-summary';
+  summary.textContent = getLocalizedField(item, 'summary');
+  content.appendChild(summary);
+
+  if (!compact) {
+    const body = document.createElement('div');
+    body.className = 'news-details-text';
+    appendParagraphs(body, getLocalizedField(item, 'body'));
+    content.appendChild(body);
+    appendNewsLinks(content, item);
+
+    if (images.length) {
+      const gallery = document.createElement('div');
+      gallery.className = 'news-gallery';
+      if (images.length === 1) gallery.classList.add('news-gallery-single');
+      images.forEach((src) => {
+        const link = document.createElement('a');
+        link.href = src;
+        link.target = '_blank';
+        link.rel = 'noopener';
+        const img = document.createElement('img');
+        img.src = src;
+        img.alt = titleText;
+        img.loading = 'lazy';
+        img.addEventListener('load', () => {
+          link.classList.toggle('is-portrait', img.naturalHeight > img.naturalWidth * 1.15);
+        });
+        img.addEventListener('error', () => link.remove());
+        link.appendChild(img);
+        gallery.appendChild(link);
+      });
+      content.appendChild(gallery);
+    }
+  } else {
+    const more = document.createElement('a');
+    more.className = 'news-read-more';
+    more.href = `news.html#${encodeURIComponent(item.id)}`;
+    more.textContent = t('news_open');
+    content.appendChild(more);
+  }
+
+  content.appendChild(createShareButtons(item));
+  card.appendChild(content);
+  return card;
+}
+
+function setupNewsCarousel(container) {
+  const oldDots = container.parentElement?.querySelector('.news-carousel-dots');
+  oldDots?.remove();
+
+  const cards = [...container.querySelectorAll('.news-card')];
+  if (cards.length <= 1 || !container.parentElement) return;
+
+  const dots = document.createElement('div');
+  dots.className = 'news-carousel-dots';
+  const buttons = cards.map((card, index) => {
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.setAttribute('aria-label', `${index + 1}`);
+    button.addEventListener('click', () => card.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' }));
+    dots.appendChild(button);
+    return button;
+  });
+  container.parentElement.appendChild(dots);
+
+  const setActiveDot = () => {
+    const scrollCenter = container.scrollLeft + container.clientWidth / 2;
+    let activeIndex = 0;
+    let activeDistance = Infinity;
+    cards.forEach((card, index) => {
+      const cardCenter = card.offsetLeft + card.offsetWidth / 2;
+      const distance = Math.abs(scrollCenter - cardCenter);
+      if (distance < activeDistance) {
+        activeDistance = distance;
+        activeIndex = index;
+      }
+    });
+    buttons.forEach((button, index) => button.classList.toggle('active', index === activeIndex));
+  };
+
+  container.addEventListener('scroll', setActiveDot, { passive: true });
+  setActiveDot();
+}
+
+function renderNews() {
+  const homeList = document.getElementById('homeNewsList');
+  if (homeList) {
+    homeList.innerHTML = '';
+    homeList.parentElement?.querySelector('.news-carousel-dots')?.remove();
+    const items = activeNewsItems().slice(0, 4);
+    if (!items.length) {
+      const empty = document.createElement('p');
+      empty.className = 'news-empty';
+      empty.textContent = t('news_empty');
+      homeList.appendChild(empty);
+    } else {
+      items.forEach((item) => homeList.appendChild(createNewsCard(item, { compact: true })));
+      setupNewsCarousel(homeList);
+    }
+  }
+
+  const feed = document.getElementById('newsFeed');
+  if (feed) {
+    feed.innerHTML = '';
+    const items = sortedNewsItems();
+    if (!items.length) {
+      const empty = document.createElement('p');
+      empty.className = 'news-empty';
+      empty.textContent = t('news_empty');
+      feed.appendChild(empty);
+    } else {
+      items.forEach((item) => feed.appendChild(createNewsCard(item)));
+      focusNewsFromHash();
+    }
+  }
+}
+
+async function loadNews() {
+  if (!document.getElementById('homeNewsList') && !document.getElementById('newsFeed')) return;
+  const res = await fetch('news.json');
+  newsItems = await res.json();
+  renderNews();
+}
+
+function focusNewsFromHash() {
+  const id = decodeURIComponent(window.location.hash.replace(/^#/, ''));
+  if (!id) return;
+  document.querySelectorAll('.news-card.is-active').forEach((node) => node.classList.remove('is-active'));
+  const node = document.getElementById(id);
+  if (!node || !node.classList.contains('news-card')) return;
+  node.classList.add('is-active');
+  setTimeout(() => node.scrollIntoView({ behavior: 'smooth', block: 'start' }), 0);
+}
+
+function focusIncidentFromHash() {
+  const id = decodeURIComponent(window.location.hash.replace(/^#/, ''));
+  if (!id) return;
+  document.querySelectorAll('.incident-card.is-active').forEach((node) => node.classList.remove('is-active'));
+  const node = document.getElementById(id);
+  if (!node || !node.classList.contains('incident-card')) return;
+  node.classList.add('is-active');
+  setTimeout(() => node.scrollIntoView({ behavior: 'smooth', block: 'start' }), 0);
+}
+
 async function loadIncidents() {
+  if (!document.getElementById('incidentList') && !document.getElementById('mainMap') && !document.getElementById('citySummary')) {
+    attachForm();
+    return;
+  }
   const res = await fetch('incidents.json');
   incidents = await res.json();
   populateCityFilter();
   renderIncidents();
   renderCitySummary();
-  initMainMap();
+  if (document.getElementById('mainMap')) initMainMap();
   attachForm();
 }
 
@@ -401,6 +741,7 @@ function renderIncidents() {
   filtered.forEach((item, index) => {
     const node = tpl.content.cloneNode(true);
     const card = node.querySelector('.incident-card');
+    card.id = item.id;
     card.setAttribute('data-incident-id', item.id);
     const typeBadge = node.querySelector('.incident-type');
     const statusBadge = node.querySelector('.incident-status');
@@ -421,6 +762,7 @@ function renderIncidents() {
     title.textContent = getLocalizedField(item, 'title');
     subtitle.textContent = `${t('card_city')}: ${localizeCityName(item.city)} • ${t('card_date')}: ${item.date}`;
     summary.textContent = getLocalizedField(item, 'summary');
+    summary.insertAdjacentElement('afterend', createShareButtons(item, incidentItemUrl(item)));
 
     const paragraphs = getLocalizedField(item, 'description').split('\n\n').filter(Boolean);
     description.innerHTML = paragraphs.map((p) => `<p>${p}</p>`).join('') + `<p><em>${t('card_map_note')}</em></p>`;
@@ -460,6 +802,7 @@ function renderIncidents() {
 
     list.appendChild(node);
   });
+  focusIncidentFromHash();
 }
 
 function colorByType(type) {
@@ -485,6 +828,7 @@ function renderCitySummary() {
 }
 
 function initMainMap() {
+  if (!document.getElementById('mainMap') || !window.L) return;
   mainMap = L.map('mainMap', { scrollWheelZoom: true, attributionControl: false }).setView([35.1264, 33.4299], 9);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; OpenStreetMap contributors'
@@ -558,6 +902,11 @@ document.addEventListener('DOMContentLoaded', async () => {
   document.getElementById('year').textContent = new Date().getFullYear();
   document.querySelectorAll('.lang-btn').forEach((btn) => btn.addEventListener('click', () => setLanguage(btn.dataset.lang)));
   setLanguage(currentLang);
-  await loadIncidents();
+  await Promise.all([loadIncidents(), loadNews()]);
   setLanguage(currentLang);
+});
+
+window.addEventListener('hashchange', () => {
+  focusNewsFromHash();
+  focusIncidentFromHash();
 });
