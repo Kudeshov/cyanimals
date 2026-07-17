@@ -391,14 +391,12 @@ function activeNewsItems() {
 }
 
 function newsItemUrl(item) {
-  const url = new URL('news.html', window.location.href);
-  url.hash = item.id;
+  const url = new URL(`news/${encodeURIComponent(item.id)}/`, window.location.href);
   return url.href;
 }
 
 function incidentItemUrl(item) {
-  const url = new URL('index.html', window.location.href);
-  url.hash = item.id;
+  const url = new URL(`incidents/${encodeURIComponent(item.id)}/`, window.location.href);
   return url.href;
 }
 
