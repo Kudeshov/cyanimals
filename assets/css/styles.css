@@ -30,7 +30,7 @@ img { max-width: 100%; display: block; }
 #about.section { padding: 56px 0; }
 .section-alt { background: var(--bg-alt); }
 .site-header {
-  position: sticky; top: 0; z-index: 1000;
+  position: relative; z-index: 1000;
   background: rgba(247,245,239,0.92); backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--line);
 }
